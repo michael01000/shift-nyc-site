@@ -1,1449 +1,1257 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SHIFT NYC</title>
-<meta name="description" content="SHIFT NYC. Underground techno in New York City: long-format raves, raw sound, serious curation. Tickets only on Resident Advisor.">
-<style>
-  :root { --bg:#0b0b0b; --fg:#ededed; --mut:#9a9a9a; --line:#262626; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
-  main { max-width:640px; margin:0 auto; padding:56px 20px 40px; }
-  h1 { font-size:2rem; letter-spacing:.08em; margin:0 0 4px; }
-  h2 { font-size:1.1rem; margin:40px 0 8px; }
-  p { color:var(--mut); margin:8px 0; }
-  a { color:var(--fg); }
-  .btn { display:inline-block; margin-top:12px; padding:12px 18px; border:1px solid var(--fg); text-decoration:none; }
-  .btn:focus-visible, a:focus-visible { outline:2px solid #fff; outline-offset:3px; }
-  .box { border:1px solid var(--line); padding:16px; margin-top:12px; }
-  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:.9rem; color:var(--mut); }
-</style>
-<style>
-
-
-
-  :where(.sib-form-message-panel) {
-    display: none;
-  }
-
-  :where(.sib-form-message-panel .sib-notification__icon) {
-    width: 20px;
-    height: 20px;
-  }
-
-
-  #sib-container input:-ms-input-placeholder {
-    font-family: Helvetica, sans-serif;
-    text-align: left;
-    color: #c0ccda;
-  }
-
-  #sib-container input::placeholder {
-    font-family: Helvetica, sans-serif;
-    text-align: left;
-    color: #c0ccda;
-  }
-
-  #sib-container textarea::placeholder {
-    font-family: Helvetica, sans-serif;
-    text-align: left;
-    color: #c0ccda;
-  }
-
-
-  #sib-container a {
-    text-decoration: underline;
-    color: #2BB2FC;
-  }
-</style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  /* Inner Circle: formulario Brevo en el tema de la web */
-  .ic { margin-top:40px; border:1px solid var(--line); padding:28px 24px 24px; background:linear-gradient(180deg,#121212,#0b0b0b); }
-  .ic-kicker { font:500 .72rem/1 "JetBrains Mono",ui-monospace,monospace; letter-spacing:.18em; text-transform:uppercase; color:var(--mut); margin:0 0 14px; }
-  .ic h2 { font:800 clamp(1.7rem,6vw,2.3rem)/1.02 "Archivo",system-ui,sans-serif; letter-spacing:-.01em; text-transform:uppercase; margin:0 0 10px; }
-  .ic-lead { color:var(--fg); opacity:.75; margin:0 0 18px; }
-  .ic-legal { font:400 .72rem/1.6 "JetBrains Mono",ui-monospace,monospace; color:#7d7d7d; margin:18px 0 0; }
-  .ic-legal a { color:#bdbdbd; }
-  .sib-form, #sib-container { background:transparent !important; border:0 !important; padding:0 !important; margin:0 !important; max-width:none !important; text-align:left !important; }
-  .sib-form-container { padding:0 !important; }
-  .sib-form .sib-form-block { padding:0 !important; }
-  .sib-form #sib-form > div { padding:7px 0 !important; }
-  .sib-form .sib-form-block, .sib-form p, .sib-form label { font-family:inherit !important; color:var(--fg) !important; }
-  .sib-form .entry__label { font:500 .7rem/1 "JetBrains Mono",ui-monospace,monospace !important; letter-spacing:.16em !important; text-transform:uppercase !important; color:var(--mut) !important; margin-bottom:8px !important; }
-  .sib-form .entry__label::after { color:var(--mut) !important; }
-  .sib-form .input, .sib-form select.input, .sib-form .entry__field, .sib-form .sib-sms-select__title, .sib-form .sib-sms-select__number-input, .sib-form .sib-sms-select__calling-code, .sib-form .sib-sms-select__phone-number { background:#0e0e0e !important; color:var(--fg) !important; border-color:#333 !important; border-radius:0 !important; font:500 1rem/1.4 "Archivo",system-ui,sans-serif !important; box-shadow:none !important; }
-  .sib-form .input { padding:13px 14px !important; height:auto !important; }
-  .sib-form .entry__field:focus-within, .sib-form .input:focus { border-color:var(--fg) !important; outline:none !important; }
-  .sib-form .sib-sms-select__phone-number::placeholder, .sib-form .input::placeholder { color:#5c5c5c !important; font-family:inherit !important; }
-  .sib-form .sib-optin p, .sib-form .checkbox__label p, .sib-form .entry__choice span p { font:400 .76rem/1.6 "JetBrains Mono",ui-monospace,monospace !important; color:#a3a3a3 !important; }
-  .sib-form .entry__choice a { color:var(--fg) !important; }
-  .sib-form .checkbox { border:1px solid #6a6a6a !important; border-radius:0 !important; background:transparent !important; }
-  .sib-form .input_replaced:checked + .checkbox { background:var(--fg) !important; border-color:var(--fg) !important; }
-  .sib-form .input_replaced:checked + .checkbox::after, .sib-form .checkbox_tick_positive::before { border-color:#0b0b0b !important; }
-  .sib-form .sib-form-block__button { width:100% !important; background:var(--fg) !important; color:#0b0b0b !important; border:1px solid var(--fg) !important; border-radius:0 !important; font:800 .95rem/1 "Archivo",system-ui,sans-serif !important; letter-spacing:.2em !important; padding:17px 18px !important; text-transform:uppercase; transition:background .15s,color .15s; }
-  .sib-form .sib-form-block__button:hover { background:transparent !important; color:var(--fg) !important; }
-  .sib-form .entry__error { color:#ff6b6b !important; background:transparent !important; border:0 !important; padding:6px 0 0 !important; font:400 .75rem/1.4 "JetBrains Mono",ui-monospace,monospace !important; }
-  .sib-form-message-panel { background:#0e0e0e !important; border:1px solid var(--fg) !important; color:var(--fg) !important; font:500 1rem/1.4 "Archivo",system-ui,sans-serif !important; max-width:none !important; }
-  .sib-form .sib-sms-tooltip, .sib-form .sib-sms-tooltip__icon { display:none !important; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHIFT NYC</title>
+  <meta name="description" content="SHIFT NYC. Underground techno in New York City: long-format raves, raw sound, serious curation. Tickets only on Resident Advisor.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SHIFT NYC">
+  <meta property="og:title" content="SHIFT NYC">
+  <meta property="og:description" content="Underground techno in New York City: long-format raves, raw sound, serious curation. Tickets only on Resident Advisor.">
+  <meta property="og:url" content="https://shift-nyc.com/">
+  <meta property="og:image" content="https://shift-nyc.com/og/shift-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <noscript>
+    <style>.intro-screen{display:none!important}#arrival,#arrival[hidden],.night-section,.night-section[hidden]{opacity:1!important;display:flex!important}.fallback-poster,.fallback-overlay{display:block!important}#bg-canvas{display:none!important}</style>
+  </noscript>
+  <script type="module" crossorigin src="/assets/main-t_oIYCT5.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-B65eHZAX.css">
 </head>
 <body>
-<main>
-  <h1>SHIFT NYC</h1>
-  <p>Underground techno in New York City.</p>
+  <!-- Fallback estático (sin WebGL2 / prefers-reduced-motion / saveData) -->
+  <picture id="fallback-poster" class="fallback-poster" hidden>
+    <source srcset="/media/fondo_puente_poster.webp" type="image/webp">
+    <img src="/media/fondo_puente_poster.jpg" alt="SHIFT NYC background" class="fallback-img">
+  </picture>
+  <div id="fallback-overlay" class="fallback-overlay" hidden></div>
 
-  <h2>Next event</h2>
-  <p>SHIFT: The Nightmare Isn't Over. Sunday, Nov 1, noon to midnight. Eden NYC, 20 W 36th St.</p>
-  <a class="btn" href="https://ra.co/events/2555321">Tickets on RA</a>
+  <!-- Canvas Three.js -->
+  <canvas id="bg-canvas"></canvas>
 
-  <h2>About</h2>
-  <p>SHIFT NYC is a techno promoter in New York City. Long-format raves, raw sound and serious curation: industrial, modular, breaks and Detroit techno. We work across Brooklyn, Queens and Manhattan, alone and with partners like CRUD0, Nova Noir and Circuit Structure Records. Tickets are sold only on Resident Advisor.</p>
+  <!-- Cabecera fija -->
+  <header class="site-header">
+    <div class="brand-group">
+      <a href="/" class="brand-link" aria-label="SHIFT NYC Home">
+      <svg xmlns="http://www.w3.org/2000/svg" class="header-logo" height="22" viewBox="67 151 1979 439" fill="currentColor" fill-rule="evenodd">
+  <path d="M 128.509 154.661 C 100.645 160.630, 77.738 182.153, 70.935 208.756 C 69.070 216.044, 69 221.061, 69 346.464 L 69 476.607 71.568 481.761 C 73.585 485.808, 84.706 497.381, 123.318 535.612 C 158.269 570.218, 173.701 584.844, 176.650 586.157 C 180.679 587.951, 207.320 587.998, 1081.650 587.753 L 1982.500 587.500 1990.901 584.568 C 2010.255 577.812, 2027.740 561.985, 2035.889 543.846 C 2042.918 528.202, 2042.434 538.640, 2042.755 395.502 C 2043.042 267.503, 2043.028 266.450, 2040.972 259.502 L 2038.900 252.500 2015.200 229.210 C 1947.147 162.333, 1939.183 154.832, 1935.276 153.924 C 1933.127 153.425, 1544.588 153.073, 1033.500 153.105 C 239.783 153.156, 134.688 153.337, 128.509 154.661 M 128 180.276 C 111.034 186.081, 98.660 198.807, 94.582 214.644 C 93.180 220.088, 93 235.057, 93 345.872 L 93 470.955 139.750 517.445 L 186.500 563.935 1079.701 563.968 C 1730.256 563.991, 1974.341 563.699, 1978.201 562.890 C 1996.356 559.089, 2014.142 541.130, 2017.942 522.763 C 2018.701 519.091, 2018.950 479.597, 2018.765 392.091 L 2018.500 266.682 1973.500 222.351 L 1928.500 178.021 1031.500 178.036 L 134.500 178.052 128 180.276 M 289.379 268.250 C 265.206 292.038, 226.545 329.919, 203.464 352.432 C 180.384 374.944, 161.350 393.732, 161.167 394.182 C 160.983 394.632, 181.792 395, 207.408 395 L 253.983 395 254.241 449.750 L 254.500 504.500 332.390 504.756 C 387.981 504.939, 410.660 504.697, 411.608 503.911 C 412.687 503.015, 412.873 493.257, 412.604 451.655 C 412.421 423.520, 412.492 399.262, 412.761 397.750 L 413.250 395 460.625 395 C 486.681 395, 508 394.661, 508 394.247 C 508 393.833, 481.113 367.140, 448.250 334.929 C 359.114 247.561, 335.766 225, 334.488 225 C 333.851 225, 313.553 244.462, 289.379 268.250 M 715.500 273.602 C 693.900 277.340, 675.634 287.037, 661.316 302.369 C 652.516 311.792, 648.255 319.888, 642.811 337.530 C 638.796 350.541, 638.505 352.255, 638.573 362.500 C 638.637 372.075, 638.975 374.212, 641.186 379 C 646.249 389.968, 656.368 398.229, 669.787 402.351 C 676.201 404.321, 679.506 404.437, 744.097 404.956 C 819.912 405.566, 815.668 405.107, 814.644 412.584 C 814.330 414.873, 813.537 417.921, 812.882 419.359 C 810.242 425.154, 815.104 424.848, 715.869 425.479 C 642.476 425.946, 624.253 426.318, 623.201 427.371 C 621.633 428.938, 605.908 479.043, 606.622 480.197 C 606.895 480.639, 653.329 480.994, 709.809 480.987 C 806.783 480.974, 813.013 480.868, 821.710 479.073 C 839.280 475.447, 854.190 467.589, 866.435 455.500 C 879.235 442.864, 883.034 434.763, 891.058 403 C 893.719 392.469, 894.148 389.161, 893.785 382 C 892.926 365.056, 884.236 355.258, 864.661 349.166 C 860.163 347.765, 850.642 347.531, 790.500 347.340 C 752.550 347.219, 720.295 347.093, 718.821 347.060 C 713.028 346.930, 711.393 341.135, 714.943 333.316 C 718.488 325.509, 711.827 326, 814.259 326 C 885.770 326, 905.988 325.728, 907.323 324.750 C 909.347 323.267, 924.463 275.648, 923.613 273.433 C 923.121 272.153, 910.201 271.980, 823.274 272.090 C 743.256 272.192, 721.916 272.491, 715.500 273.602 M 961.253 273.250 C 960.707 273.938, 957.014 285.075, 953.047 298 C 949.079 310.925, 941.858 334.325, 937 350 C 932.142 365.675, 924.539 390.425, 920.104 405 C 915.670 419.575, 908.741 442.101, 904.706 455.057 C 900.672 468.014, 897.550 479.151, 897.769 479.807 C 898.375 481.624, 966.332 481.510, 967.843 479.689 C 968.441 478.968, 971.003 471.656, 973.535 463.439 C 982.695 433.717, 991.285 407.474, 992.255 406.250 C 993.694 404.433, 1130 404.418, 1130 406.234 C 1130 406.913, 1125.227 423.339, 1119.394 442.737 C 1113.560 462.134, 1109.046 478.678, 1109.362 479.502 C 1109.857 480.792, 1114.626 480.998, 1143.719 480.985 C 1162.298 480.976, 1178.123 480.575, 1178.885 480.092 C 1179.647 479.610, 1182.422 471.854, 1185.051 462.857 C 1192.762 436.470, 1204.779 396.794, 1220.292 346.500 C 1240.213 281.920, 1242.223 275.023, 1241.598 273.395 C 1241.139 272.198, 1235.581 272.015, 1206.318 272.237 L 1171.583 272.500 1170.344 276 C 1169.663 277.925, 1167.269 285.800, 1165.023 293.500 C 1162.777 301.200, 1158.193 316.347, 1154.836 327.160 L 1148.733 346.819 1137.617 347.369 C 1131.502 347.672, 1100.400 347.825, 1068.500 347.710 C 1017.529 347.525, 1010.542 347.318, 1010.846 346 C 1011.036 345.175, 1014.073 335.293, 1017.596 324.040 C 1027.907 291.096, 1032.320 275.277, 1031.670 273.583 C 1031.132 272.181, 1027.122 272, 996.654 272 C 970.322 272, 962.012 272.293, 961.253 273.250 M 1275.786 273.250 C 1274.909 273.938, 1271.862 282.375, 1269.015 292 C 1262.087 315.429, 1245.234 369.195, 1232.498 408.500 C 1218.645 451.252, 1210.741 477.884, 1211.398 479.596 C 1212.149 481.552, 1283.207 481.701, 1284.732 479.750 C 1285.270 479.063, 1289.418 466.125, 1293.951 451 C 1298.484 435.875, 1305.031 414.275, 1308.501 403 C 1311.971 391.725, 1318.025 371.700, 1321.954 358.500 C 1325.883 345.300, 1333.179 321.110, 1338.166 304.744 C 1345.574 280.437, 1347.008 274.715, 1345.995 273.494 C 1344.940 272.223, 1339.733 272, 1311.069 272 C 1285.637 272, 1276.991 272.306, 1275.786 273.250 M 1416.500 274.438 C 1405.558 277.282, 1398.032 280.544, 1390.325 285.784 C 1384.739 289.581, 1374.663 299.181, 1371.455 303.761 C 1367.232 309.790, 1363.383 320.292, 1354.506 350 C 1349.165 367.875, 1338.342 404.018, 1330.455 430.318 C 1322.568 456.618, 1316.364 478.786, 1316.669 479.580 C 1317.141 480.809, 1322.532 480.986, 1352.779 480.763 L 1388.334 480.500 1391.093 472 C 1394.237 462.315, 1410.507 410.659, 1411.486 407.256 L 1412.131 405.012 1492.304 404.756 L 1572.477 404.500 1576.731 390.500 C 1586.838 357.235, 1588.367 351.147, 1587.025 349.530 C 1585.905 348.181, 1576.501 348, 1507.378 348 C 1464.270 348, 1428.991 347.663, 1428.980 347.250 C 1428.969 346.837, 1430.394 341.887, 1432.147 336.250 L 1435.335 326 1518.233 326 C 1572.632 326, 1601.786 325.650, 1603.036 324.981 C 1604.357 324.274, 1606.311 319.602, 1609.415 309.731 C 1618.552 280.670, 1620.080 274.801, 1618.881 273.357 C 1617.947 272.231, 1601.399 272.008, 1521.628 272.049 L 1425.500 272.098 1416.500 274.438 M 1644.142 272.891 C 1641.993 274.253, 1627.872 323.141, 1629.175 324.711 C 1630.020 325.729, 1640.050 326, 1676.969 326 L 1723.693 326 1717.464 347.250 C 1711.005 369.288, 1683.601 459.211, 1679.599 471.500 C 1678.345 475.350, 1677.510 479.063, 1677.743 479.750 C 1678.403 481.697, 1752.296 481.553, 1753.916 479.601 C 1754.554 478.832, 1757.342 470.845, 1760.111 461.851 C 1762.880 452.858, 1770.788 427.500, 1777.684 405.500 C 1784.580 383.500, 1792.956 356.613, 1796.298 345.750 L 1802.373 326 1850.496 326 C 1887.483 326, 1898.984 325.711, 1900.199 324.750 C 1901.069 324.063, 1903.202 318.550, 1904.938 312.500 C 1906.675 306.450, 1909.938 295.577, 1912.189 288.338 C 1914.440 281.100, 1916.008 274.462, 1915.672 273.588 C 1915.120 272.148, 1902.511 272.001, 1780.281 272.015 C 1706.152 272.024, 1644.889 272.418, 1644.142 272.891 M 295.994 321.121 C 274.822 341.415, 257.353 358.456, 257.174 358.989 C 256.973 359.586, 264.450 360.061, 276.674 360.229 L 296.500 360.500 296.127 412.250 L 295.754 464 333.377 464 L 371 464 371 412 L 371 360 391 360 C 402.054 360, 411 359.601, 411 359.108 C 411 358.255, 345.278 293.577, 337.994 287.261 L 334.488 284.221 295.994 321.121" stroke="none" fill="currentColor" fill-rule="evenodd"/>
+</svg>
+    </a>
+      <span id="header-clock" class="header-clock" aria-hidden="true" hidden>12:00</span>
+    </div>
+    <a id="btn-ra-header" class="btn-ra-nav" href="https://ra.co/events/2555321" target="_blank" rel="noopener">TICKETS ON RA ⇧</a>
+  </header>
 
-  <h2>Past events</h2>
-  <ul>
-    <li>Jul 17, 2026 &middot; <a href="https://ra.co/events/2417040">NEXUS 005 - The Finale</a> &middot; BABY01</li>
-    <li>Jul 12, 2026 &middot; <a href="https://ra.co/events/2459973">FREEDOM NYC X SHIFT TAKE OVER</a> &middot; Eden NYC</li>
-    <li>May 23, 2026 &middot; <a href="https://ra.co/events/2353409">SOLACE &amp; SHIFT - SUMMER OPENER</a> &middot; Honey's</li>
-    <li>Dec 27, 2025 &middot; <a href="https://ra.co/events/2304935">Winter Resonance III: Lewis Fautzi, Temudo, Elle Dee &amp; More</a> &middot; H0L0</li>
-    <li>Nov 28, 2025 &middot; <a href="https://ra.co/events/2229355">Circuit Structure Records 3rd Birthday X Shift New York</a> &middot; Lark</li>
-    <li>Jun 27, 2025 &middot; <a href="https://ra.co/events/2189180">GENETRIX: Developer / Anthony Parasole</a> &middot; NYC</li>
-    <li>Apr 27, 2025 &middot; <a href="https://ra.co/events/2129573">CRUD0 x SHIFT PRESENTS: Cleric</a> &middot; The Meadow</li>
-    <li>Sep 6, 2024 &middot; <a href="https://ra.co/events/1974478">TECHNO ORIGINS Vol. 1: The Advent &amp; Joey Beltram</a> &middot; 315 Stagg St</li>
-    <li>Jun 8, 2024 &middot; <a href="https://ra.co/events/1909580">Marco Bailey + Julia Govor</a> &middot; 315 Stagg St</li>
-  </ul>
-  <p><a href="https://ra.co/promoters/101532">All events on Resident Advisor</a></p>
+  <!-- Botón de sonido fijo -->
+  <button id="btn-sound" class="btn-sound" aria-live="polite" hidden>SOUND OFF</button>
 
-  <section class="ic" id="inner-circle">
-  <p class="ic-kicker">SHIFT NYC &middot; Inner Circle</p>
-  <h2>Join the Inner Circle</h2>
-  <p class="ic-lead">First word on dates and ticket links. Email, and texts if you want them.</p>
-<div class="sib-form" style="text-align: center;
-         background-color: #EFF2F7; 
-        
-        
-        
-        ">
-  <div id="sib-form-container" class="sib-form-container">
-    <div id="error-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;
-        max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
-
-
-                Something went wrong. Try again.
-              
-            
-          </span>
+  <main>
+    <!-- Pantalla inicial: PRESS SHIFT -->
+    <div id="intro-screen" class="intro-screen">
+      <button id="btn-tecla" class="tecla-hitbox" aria-label="Press SHIFT to enter"></button>
+      <div id="intro-content" class="intro-content">
+        <p id="intro-hint" class="intro-hint">Press SHIFT.</p>
+        <span class="intro-pulse-line" aria-hidden="true"></span>
+        <button id="btn-silent" class="btn-silent">enter silent</button>
       </div>
     </div>
-    <div></div>
-    <div id="success-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-color:#13ce66; border-radius:3px;
-        max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
 
-
-                You&#39;re in.
-             
-            
-          </span>
+    <!-- Sección Arrival (contenido) -->
+    <section id="arrival" class="arrival-section" hidden>
+      <div class="arrival-clock" id="arrival-clock">12:00</div>
+      <h1 class="arrival-title" id="event-title">SHIFT: The Nightmare Isn't Over</h1>
+      <p class="arrival-meta">
+        <span id="event-date">Sun Nov 1</span> &middot;
+        <span id="event-time">12:00–00:00</span> &middot;
+        <span id="event-venue">EDEN NYC</span>
+      </p>
+      <div class="arrival-actions">
+        <a id="btn-ra-arrival" class="btn-ra-main" href="https://ra.co/events/2555321" target="_blank" rel="noopener">TICKETS ON RA ⇧</a>
       </div>
+      <footer class="arrival-footer">
+        <p class="arrival-pie">Long-form techno in New York City. Tickets only on Resident Advisor.</p>
+      </footer>
+    </section>
+
+    <!-- Sección Program -->
+    <section id="program" class="night-section">
+      <h2>PROGRAM</h2>
+      <div class="program-list">
+        <!-- PROGRAM_ITEMS -->
+        <article class="program-live" data-fecha="2026-11-01" data-estado="on-sale">
+          <div class="program-live-badges">
+            <span class="program-live-status">ON SALE</span>
+            <span class="program-live-count">IN 4 DAYS</span>
+          </div>
+          <p class="program-live-date">SUN NOV 1 2026</p>
+          <h3 class="program-live-title">SHIFT: The Nightmare Isn&#39;t Over</h3>
+          <p class="program-live-venue">EDEN NYC</p>
+          <div class="event-headliners program-live-headliners"><a class="artist-headliner-link" href="/artists/developer/">Developer</a> &middot; <a class="artist-headliner-link" href="/artists/orlando-voorn/">Orlando Voorn</a> &middot; <a class="artist-headliner-link" href="/artists/dj-plant-texture/">DJ Plant Texture</a></div>
+          <div class="program-live-action">
+            <a class="btn-ra-live" href="https://ra.co/events/2555321" target="_blank" rel="noopener">TICKETS ON RA &#8679;</a>
+          </div>
+        </article>
+        <div class="program-next-row" id="ev-2568145">
+          <a class="event-main-link" href="https://ra.co/events/2568145" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 26 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">WINTER RESONANCE ||||</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">TBA</span>
+            </span>
+            <span class="program-next-status">ANNOUNCED</span>
+          </a>
+        </div>
+        <!-- /PROGRAM_ITEMS -->
+      </div>
+    </section>
+
+    <!-- Sección Archive -->
+    <section id="archive" class="night-section">
+      <h2>ARCHIVE</h2>
+      <p class="archive-count">63 NIGHTS</p>
+      <div class="archive-list">
+        <!-- ARCHIVE_ITEMS -->
+        <details class="archive-year-group" data-anio="2026" open>
+          <summary class="archive-year">2026 &middot; 7 NIGHTS</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-2417040">
+          <a class="event-main-link" href="https://ra.co/events/2417040" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI JUL 17 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NEXUS 005 - The Finale</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">BABY01</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Aero</span> &middot; <span>Cailín</span> &middot; <span>Chaz Moloney</span></div>
+        </div>
+        <div class="event-row" id="ev-2459973">
+          <a class="event-main-link" href="https://ra.co/events/2459973" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN JUL 12 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FREEDOM NYC X SHIFT TAKE OVER</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Eden NYC</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/joey-beltram/">Joey Beltram</a> &middot; <span>Antenes</span> &middot; <span>Ambivalent</span></div>
+        </div>
+        <div class="event-row" id="ev-2433061">
+          <a class="event-main-link" href="https://ra.co/events/2433061" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JUN 20 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">ÂTΞMPORAL</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/paul-ritch/">Paul Ritch</a> &middot; <a class="artist-headliner-link" href="/artists/umfang/">Umfang</a> &middot; <span>Olivia Mendez</span></div>
+        </div>
+        <div class="event-row" id="ev-2353409">
+          <a class="event-main-link" href="https://ra.co/events/2353409" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT MAY 23 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SOLACE &amp; SHIFT - SUMMER OPENER</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Honey&#39;s</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/julia-govor/">Julia Govor</a> &middot; <span>SHYDA</span> &middot; <span>VEZ.</span></div>
+        </div>
+        <div class="event-row" id="ev-2423961">
+          <a class="event-main-link" href="https://ra.co/events/2423961" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN MAY 3 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">CRUD0 x SHIFT joint forces for a free open air session featuring</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+        </div>
+        <div class="event-row" id="ev-2416458">
+          <a class="event-main-link" href="https://ra.co/events/2416458" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT APR 25 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NO NAME: Trust The Signal</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/border-one/">Border One</a></div>
+        </div>
+        <div class="event-row" id="ev-2406692">
+          <a class="event-main-link" href="https://ra.co/events/2406692" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN APR 19 2026</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT × CRUD0 Open Air</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Under the Kosciuszko Bridge, Queens</span>
+            </span>
+          </a>
+          <a class="event-journal-link" href="/journal/free-open-air-queens/">Journal &rarr;</a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/frazi-er/">Frazi.er</a> &middot; <a class="artist-headliner-link" href="/artists/mascha/">MASCHA</a> &middot; <a class="artist-headliner-link" href="/artists/junkfile/">Junkfile</a></div>
+        </div>
+        <details class="event-gallery">
+          <summary class="gallery-summary"><span class="gallery-label-closed">PHOTOS</span><span class="gallery-label-open">CLOSE</span></summary>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/01-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="DJ booth above the crowd at the open air in Queens">
+                <img src="/img/archivo/2406692/01-800.webp" srcset="/img/archivo/2406692/01-800.webp 800w, /img/archivo/2406692/01-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1067" alt="DJ booth above the crowd at the open air in Queens" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/02-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="Speakers and dancers against a graffiti wall">
+                <img src="/img/archivo/2406692/02-800.webp" srcset="/img/archivo/2406692/02-800.webp 800w, /img/archivo/2406692/02-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1069" alt="Speakers and dancers against a graffiti wall" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/03-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="View from behind the DJ booth over the crowd">
+                <img src="/img/archivo/2406692/03-800.webp" srcset="/img/archivo/2406692/03-800.webp 800w, /img/archivo/2406692/03-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1067" alt="View from behind the DJ booth over the crowd" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/04-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="Dancers in black under a bright sky">
+                <img src="/img/archivo/2406692/04-800.webp" srcset="/img/archivo/2406692/04-800.webp 800w, /img/archivo/2406692/04-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1067" alt="Dancers in black under a bright sky" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/05-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="Bridge structure overhead, dancers on a raised platform">
+                <img src="/img/archivo/2406692/05-800.webp" srcset="/img/archivo/2406692/05-800.webp 800w, /img/archivo/2406692/05-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1069" alt="Bridge structure overhead, dancers on a raised platform" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/06-1600.webp" target="_blank" rel="noopener" data-author="crud0___" data-alt="Wide view of the crowd beneath the bridge">
+                <img src="/img/archivo/2406692/06-800.webp" srcset="/img/archivo/2406692/06-800.webp 800w, /img/archivo/2406692/06-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1067" alt="Wide view of the crowd beneath the bridge" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/crud0___/" target="_blank" rel="noopener">@crud0___</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/07-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="Portrait under the bridge by the water">
+                <img src="/img/archivo/2406692/07-800.webp" srcset="/img/archivo/2406692/07-800.webp 800w, /img/archivo/2406692/07-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Portrait under the bridge by the water" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/08-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="Crowd in front of graffiti walls by the river">
+                <img src="/img/archivo/2406692/08-800.webp" srcset="/img/archivo/2406692/08-800.webp 800w, /img/archivo/2406692/08-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Crowd in front of graffiti walls by the river" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/09-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="Dancers packed together in daylight">
+                <img src="/img/archivo/2406692/09-800.webp" srcset="/img/archivo/2406692/09-800.webp 800w, /img/archivo/2406692/09-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Dancers packed together in daylight" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/10-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="The crowd seen through a metal fence">
+                <img src="/img/archivo/2406692/10-800.webp" srcset="/img/archivo/2406692/10-800.webp 800w, /img/archivo/2406692/10-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="The crowd seen through a metal fence" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/11-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="DJ playing in front of the graffiti wall">
+                <img src="/img/archivo/2406692/11-800.webp" srcset="/img/archivo/2406692/11-800.webp 800w, /img/archivo/2406692/11-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1599" alt="DJ playing in front of the graffiti wall" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/12-1600.webp" target="_blank" rel="noopener" data-author="frazi.er" data-alt="A dancer reaching up near the booth">
+                <img src="/img/archivo/2406692/12-800.webp" srcset="/img/archivo/2406692/12-800.webp 800w, /img/archivo/2406692/12-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="A dancer reaching up near the booth" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/frazi.er/" target="_blank" rel="noopener">@frazi.er</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/13-1600.webp" target="_blank" rel="noopener" data-author="johannamascha" data-alt="DJ playing under the bridge">
+                <img src="/img/archivo/2406692/13-800.webp" srcset="/img/archivo/2406692/13-800.webp 800w, /img/archivo/2406692/13-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="DJ playing under the bridge" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/johannamascha/" target="_blank" rel="noopener">@johannamascha</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2406692/14-1600.webp" target="_blank" rel="noopener" data-author="johannamascha" data-alt="DJ behind the decks, crowd in front">
+                <img src="/img/archivo/2406692/14-800.webp" srcset="/img/archivo/2406692/14-800.webp 800w, /img/archivo/2406692/14-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1200" alt="DJ behind the decks, crowd in front" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/johannamascha/" target="_blank" rel="noopener">@johannamascha</a></figcaption>
+            </figure>
+          </div>
+        </details>
+          </div>
+        </details>
+        <details class="archive-year-group" data-anio="2025">
+          <summary class="archive-year">2025 &middot; 11 NIGHTS</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-2304935">
+          <a class="event-main-link" href="https://ra.co/events/2304935" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 27 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Winter Resonance III: Lewis Fautzi, Temudo, Elle Dee &amp; More</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">H0L0</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/lewis-fautzi/">Lewis Fautzi</a> &middot; <a class="artist-headliner-link" href="/artists/temudo/">Temudo</a> &middot; <span>Elle Dee</span></div>
+        </div>
+        <details class="event-gallery">
+          <summary class="gallery-summary"><span class="gallery-label-closed">PHOTOS</span><span class="gallery-label-open">CLOSE</span></summary>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/01-1600.webp" target="_blank" rel="noopener" data-author="impulsecontrol.newyork" data-alt="Crowd and DJ under red light at H0L0">
+                <img src="/img/archivo/2304935/01-800.webp" srcset="/img/archivo/2304935/01-800.webp 800w, /img/archivo/2304935/01-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Crowd and DJ under red light at H0L0" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/impulsecontrol.newyork/" target="_blank" rel="noopener">@impulsecontrol.newyork</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/02-1600.webp" target="_blank" rel="noopener" data-author="impulsecontrol.newyork" data-alt="DJ at the mixer, close up">
+                <img src="/img/archivo/2304935/02-800.webp" srcset="/img/archivo/2304935/02-800.webp 800w, /img/archivo/2304935/02-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="DJ at the mixer, close up" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/impulsecontrol.newyork/" target="_blank" rel="noopener">@impulsecontrol.newyork</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/03-1600.webp" target="_blank" rel="noopener" data-author="impulsecontrol.newyork" data-alt="Red-lit room with the DJ booth">
+                <img src="/img/archivo/2304935/03-800.webp" srcset="/img/archivo/2304935/03-800.webp 800w, /img/archivo/2304935/03-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Red-lit room with the DJ booth" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/impulsecontrol.newyork/" target="_blank" rel="noopener">@impulsecontrol.newyork</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/04-1600.webp" target="_blank" rel="noopener" data-author="impulsecontrol.newyork" data-alt="Hands on the decks under blue and red light">
+                <img src="/img/archivo/2304935/04-800.webp" srcset="/img/archivo/2304935/04-800.webp 800w, /img/archivo/2304935/04-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="Hands on the decks under blue and red light" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/impulsecontrol.newyork/" target="_blank" rel="noopener">@impulsecontrol.newyork</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/05-1600.webp" target="_blank" rel="noopener" data-author="impulsecontrol.newyork" data-alt="DJ with headphones at the decks">
+                <img src="/img/archivo/2304935/05-800.webp" srcset="/img/archivo/2304935/05-800.webp 800w, /img/archivo/2304935/05-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="1600" alt="DJ with headphones at the decks" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/impulsecontrol.newyork/" target="_blank" rel="noopener">@impulsecontrol.newyork</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/06-1600.webp" target="_blank" rel="noopener" data-author="ramsey.neville" data-alt="The room at H0L0 from the back">
+                <img src="/img/archivo/2304935/06-800.webp" srcset="/img/archivo/2304935/06-800.webp 800w, /img/archivo/2304935/06-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="2001" alt="The room at H0L0 from the back" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/ramsey.neville/" target="_blank" rel="noopener">@ramsey.neville</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2304935/07-1600.webp" target="_blank" rel="noopener" data-author="ramsey.neville" data-alt="Crew on the stairs">
+                <img src="/img/archivo/2304935/07-800.webp" srcset="/img/archivo/2304935/07-800.webp 800w, /img/archivo/2304935/07-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="2001" alt="Crew on the stairs" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/ramsey.neville/" target="_blank" rel="noopener">@ramsey.neville</a></figcaption>
+            </figure>
+          </div>
+        </details>
+        <div class="event-row" id="ev-2318527">
+          <a class="event-main-link" href="https://ra.co/events/2318527" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 20 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">HDC &amp; Shift NYC</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>dDre</span> &middot; <span>JADE CAO</span> &middot; <span>Marteka Fair</span></div>
+        </div>
+        <div class="event-row" id="ev-2229355">
+          <a class="event-main-link" href="https://ra.co/events/2229355" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI NOV 28 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Circuit Structure Records 3rd Birthday X Shift New York</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Lark</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/offtrack/">Offtrack</a> &middot; <a class="artist-headliner-link" href="/artists/meda-ava/">Meda-Ava</a> &middot; <span>Stephanie Sykes</span></div>
+        </div>
+        <details class="event-gallery">
+          <summary class="gallery-summary"><span class="gallery-label-closed">PHOTOS</span><span class="gallery-label-open">CLOSE</span></summary>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2229355/01-1600.webp" target="_blank" rel="noopener" data-author="circuitstructurerecords" data-alt="Silhouettes in red haze">
+                <img src="/img/archivo/2229355/01-800.webp" srcset="/img/archivo/2229355/01-800.webp 800w, /img/archivo/2229355/01-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="2133" alt="Silhouettes in red haze" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/circuitstructurerecords/" target="_blank" rel="noopener">@circuitstructurerecords</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2229355/02-1600.webp" target="_blank" rel="noopener" data-author="circuitstructurerecords" data-alt="Decks under red light">
+                <img src="/img/archivo/2229355/02-800.webp" srcset="/img/archivo/2229355/02-800.webp 800w, /img/archivo/2229355/02-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="2133" alt="Decks under red light" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/circuitstructurerecords/" target="_blank" rel="noopener">@circuitstructurerecords</a></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a class="gallery-link" href="/img/archivo/2229355/03-1600.webp" target="_blank" rel="noopener" data-author="circuitstructurerecords" data-alt="Blue haze over the dancefloor">
+                <img src="/img/archivo/2229355/03-800.webp" srcset="/img/archivo/2229355/03-800.webp 800w, /img/archivo/2229355/03-1600.webp 1600w" sizes="(max-width: 640px) 50vw, 300px" width="1600" height="2133" alt="Blue haze over the dancefloor" loading="lazy" decoding="async">
+              </a>
+              <figcaption class="gallery-credit">Photo: <a class="gallery-credit-link" href="https://www.instagram.com/circuitstructurerecords/" target="_blank" rel="noopener">@circuitstructurerecords</a></figcaption>
+            </figure>
+          </div>
+        </details>
+        <div class="event-row" id="ev-2153312">
+          <a class="event-main-link" href="https://ra.co/events/2153312" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI AUG 8 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Renate Klubnacht w Oliver Deutschmann, DJ Zurückbleiben Bitte, Manus, androosh, aem.aze, LECAT</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Renate</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>DJ Frequency</span> &middot; <span>Paul Munz</span> &middot; <span>aem.aze</span></div>
+        </div>
+        <div class="event-row" id="ev-2176939">
+          <a class="event-main-link" href="https://ra.co/events/2176939" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JUL 19 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FUTURHYTHM: Paul Ritch / Border One / Hertz Collision + More TBA</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/paul-ritch/">Paul Ritch</a> &middot; <a class="artist-headliner-link" href="/artists/border-one/">Border One</a> &middot; <span>Hertz Collision</span></div>
+        </div>
+        <div class="event-row" id="ev-2189180">
+          <a class="event-main-link" href="https://ra.co/events/2189180" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI JUN 27 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GENETRIX: Developer / Anthony Parasole</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/developer/">Developer</a> &middot; <a class="artist-headliner-link" href="/artists/anthony-parasole/">Anthony Parasole</a></div>
+        </div>
+        <div class="event-row" id="ev-2129573">
+          <a class="event-main-link" href="https://ra.co/events/2129573" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN APR 27 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">CRUD0 x SHIFT PRESENTS: Cleric</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">The Meadow</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/cleric/">Cleric</a> &middot; <span>Awazaki</span> &middot; <span>Rupert Wall</span></div>
+        </div>
+        <div class="event-row" id="ev-2141132">
+          <a class="event-main-link" href="https://ra.co/events/2141132" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON APR 14 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Nova Noir</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/ramsey-neville/">Ramsey Neville</a> &middot; <a class="artist-headliner-link" href="/artists/michelle-kay/">Michelle Kay</a></div>
+        </div>
+        <div class="event-row" id="ev-2123408">
+          <a class="event-main-link" href="https://ra.co/events/2123408" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN APR 13 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NEXUS 003</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">The Chocolate Factory</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>AOIFE</span> &middot; <a class="artist-headliner-link" href="/artists/csilla/">CSILLA</a> &middot; <span>Hooligan</span></div>
+        </div>
+        <div class="event-row" id="ev-2104595">
+          <a class="event-main-link" href="https://ra.co/events/2104595" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON FEB 24 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT INVITES TO NOVA NOIR</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>PS11</span> &middot; <a class="artist-headliner-link" href="/artists/n1na/">N1NA</a> &middot; <span>MEDINA</span></div>
+        </div>
+        <div class="event-row" id="ev-2079859">
+          <a class="event-main-link" href="https://ra.co/events/2079859" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON JAN 27 2025</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NOVA NOIR</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Devoye</span></div>
+        </div>
+          </div>
+        </details>
+        <details class="archive-year-group" data-anio="2024">
+          <summary class="archive-year">2024 &middot; 17 NIGHTS</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-2041681">
+          <a class="event-main-link" href="https://ra.co/events/2041681" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 28 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT x IMPULSE CØNTROL: Winter Resonance Vol. 2</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">96 Morgan Ave</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/truncate/">Truncate</a> &middot; <span>Centrific</span> &middot; <a class="artist-headliner-link" href="/artists/ramsey-neville/">Ramsey Neville</a></div>
+        </div>
+        <div class="event-row" id="ev-2041304">
+          <a class="event-main-link" href="https://ra.co/events/2041304" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 7 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">{b}: Feenicks b2b Jesse, KXAH, Lady Tazz, Spencer Zabiela b2b Ant LaRock</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">96 Morgan Ave</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Feenicks</span> &middot; <span>KXAH</span> &middot; <span>Lady Tazz</span></div>
+        </div>
+        <div class="event-row" id="ev-1991493">
+          <a class="event-main-link" href="https://ra.co/events/1991493" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT SEP 21 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FUTURE RHYTHM</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">315 Stagg st</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Exos</span> &middot; <span>Barbosa</span> &middot; <span>Alejandro Franco</span></div>
+        </div>
+        <div class="event-row" id="ev-1974478">
+          <a class="event-main-link" href="https://ra.co/events/1974478" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI SEP 6 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">TECHNO ORIGINS Vol. 1: The Advent &amp; Joey Beltram</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">315 Stagg st</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/the-advent/">The Advent</a> &middot; <a class="artist-headliner-link" href="/artists/joey-beltram/">Joey Beltram</a> &middot; <span>Salty DJ</span></div>
+        </div>
+        <div class="event-row" id="ev-1956707">
+          <a class="event-main-link" href="https://ra.co/events/1956707" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON JUL 15 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Nova Noir</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>NUJIART</span> &middot; <span>Âsan</span></div>
+        </div>
+        <div class="event-row" id="ev-1949376">
+          <a class="event-main-link" href="https://ra.co/events/1949376" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN JUL 7 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">BLASTOFF</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">315 Stagg st</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>D-Leria</span> &middot; <span>P.E.A.R.L.</span> &middot; <span>Unbekannt</span></div>
+        </div>
+        <div class="event-row" id="ev-1909580">
+          <a class="event-main-link" href="https://ra.co/events/1909580" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JUN 8 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Marco Bailey + Julia Govor</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">315 Stagg st</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/marco-bailey/">Marco Bailey</a> &middot; <a class="artist-headliner-link" href="/artists/julia-govor/">Julia Govor</a> &middot; <span>BRALLE</span></div>
+        </div>
+        <div class="event-row" id="ev-1875749">
+          <a class="event-main-link" href="https://ra.co/events/1875749" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI MAY 31 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">BLVCK DANCE 2nd EDITION</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Metaraph</span> &middot; <span>7CIRCLE</span> &middot; <span>Tensal</span></div>
+        </div>
+        <div class="event-row" id="ev-1909915">
+          <a class="event-main-link" href="https://ra.co/events/1909915" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN APR 28 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GETAWAY // DAYTIME RAVE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>JOSELO</span> &middot; <a class="artist-headliner-link" href="/artists/ps-eleven/">PS/ELEVEN</a> &middot; <span>Andrea Arias</span></div>
+        </div>
+        <div class="event-row" id="ev-1894545">
+          <a class="event-main-link" href="https://ra.co/events/1894545" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN APR 7 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GETAWAY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">1308 Myrtle Av</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/umfang/">Umfang</a> &middot; <a class="artist-headliner-link" href="/artists/concrete-husband/">Concrete Husband</a></div>
+        </div>
+        <div class="event-row" id="ev-1868688">
+          <a class="event-main-link" href="https://ra.co/events/1868688" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI MAR 22 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT X CONSERVATORY PRESENT: OVERTURE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Hitam</span> &middot; <span>WINDFUHR</span> &middot; <span>Montero</span></div>
+        </div>
+        <div class="event-row" id="ev-1882949">
+          <a class="event-main-link" href="https://ra.co/events/1882949" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT MAR 16 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GETAWAY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Dj ANGELDU$t</span> &middot; <a class="artist-headliner-link" href="/artists/purdy/">Purdy</a> &middot; <a class="artist-headliner-link" href="/artists/cryfxb/">CRYFXB</a></div>
+        </div>
+        <div class="event-row" id="ev-1855608">
+          <a class="event-main-link" href="https://ra.co/events/1855608" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT FEB 24 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT X CONSERVATORY X NXT PRESENT: IGNITE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/asharpmusic/">Asharpmusic</a></div>
+        </div>
+        <div class="event-row" id="ev-1838078">
+          <a class="event-main-link" href="https://ra.co/events/1838078" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON JAN 29 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NOVA NOIR</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/fadeface/">FadeFace</a></div>
+        </div>
+        <div class="event-row" id="ev-1848863">
+          <a class="event-main-link" href="https://ra.co/events/1848863" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN JAN 28 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GETAWAY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/concrete-husband/">Concrete Husband</a></div>
+        </div>
+        <div class="event-row" id="ev-1836864">
+          <a class="event-main-link" href="https://ra.co/events/1836864" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JAN 20 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Sensorial with Infra x Shift x Conservatory</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">315 Stagg st</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>ORBE</span> &middot; <span>Xoce</span> &middot; <a class="artist-headliner-link" href="/artists/csilla/">CSILLA</a></div>
+        </div>
+        <div class="event-row" id="ev-1835451">
+          <a class="event-main-link" href="https://ra.co/events/1835451" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JAN 13 2024</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">TRIM X Shift NYC</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Telephone</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/purdy/">Purdy</a> &middot; <a class="artist-headliner-link" href="/artists/cryfxb/">CRYFXB</a> &middot; <a class="artist-headliner-link" href="/artists/concrete-husband/">Concrete Husband</a></div>
+        </div>
+          </div>
+        </details>
+        <details class="archive-year-group" data-anio="2023">
+          <summary class="archive-year">2023 &middot; 21 NIGHTS</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-1826563">
+          <a class="event-main-link" href="https://ra.co/events/1826563" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI DEC 29 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">SHIFT: Lindsey Herbert Decoder jay york Åre:gone Secret Raver Adrian Hex PS11 A#</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/lindsey-herbert/">Lindsey Herbert</a> &middot; <span>Decoder</span> &middot; <span>Åre:gone</span></div>
+        </div>
+        <div class="event-row" id="ev-1823878">
+          <a class="event-main-link" href="https://ra.co/events/1823878" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 23 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Patrick Russell &amp; AL3XANDRIA in Brooklyn</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Patrick Russell</span> &middot; <span>AL3XANDRIA</span> &middot; <span>Annie Lew</span></div>
+        </div>
+        <div class="event-row" id="ev-1812736">
+          <a class="event-main-link" href="https://ra.co/events/1812736" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 2 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FUTURISM</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">The Subway Station</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/eduardo-de-la-calle/">Eduardo de la Calle</a> &middot; <span>Aöcram</span> &middot; <a class="artist-headliner-link" href="/artists/asharpmusic/">Asharpmusic</a></div>
+        </div>
+        <div class="event-row" id="ev-1815026">
+          <a class="event-main-link" href="https://ra.co/events/1815026" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">MON NOV 27 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">NOVA NOIR</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Bossa Nova Civic Club</span>
+            </span>
+          </a>
+        </div>
+        <div class="event-row" id="ev-1810235">
+          <a class="event-main-link" href="https://ra.co/events/1810235" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT NOV 18 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">After Hours</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>DAIYAH</span> &middot; <span>Kevin Matto</span></div>
+        </div>
+        <div class="event-row" id="ev-1808603">
+          <a class="event-main-link" href="https://ra.co/events/1808603" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI NOV 17 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FUNKY MY GROOVY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>DAIYAH</span> &middot; <span>Kevin Matto</span> &middot; <a class="artist-headliner-link" href="/artists/georgi-naumov/">Georgi Naumov</a></div>
+        </div>
+        <div class="event-row" id="ev-1802816">
+          <a class="event-main-link" href="https://ra.co/events/1802816" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT NOV 4 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">UNDERBRIDGE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Unbekannt</span> &middot; <span>Juan Evangelista</span> &middot; <span>An Chen</span></div>
+        </div>
+        <div class="event-row" id="ev-1795007">
+          <a class="event-main-link" href="https://ra.co/events/1795007" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN OCT 22 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">GATEWAY AFTER HOURS</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Dashi Brooklyn</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>PLEASURES</span> &middot; <a class="artist-headliner-link" href="/artists/n1na/">N1NA</a> &middot; <span>Mos</span></div>
+        </div>
+        <div class="event-row" id="ev-1791042">
+          <a class="event-main-link" href="https://ra.co/events/1791042" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN OCT 15 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Symmetry</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Symmetry</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/georgi-naumov/">Georgi Naumov</a> &middot; <a class="artist-headliner-link" href="/artists/radar/">Radar</a> &middot; <span>Ronaldo</span></div>
+        </div>
+        <div class="event-row" id="ev-1782313">
+          <a class="event-main-link" href="https://ra.co/events/1782313" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI OCT 13 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Funky My Groove</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/ps-eleven/">PS/ELEVEN</a> &middot; <a class="artist-headliner-link" href="/artists/radar/">Radar</a> &middot; <span>TeddyRx</span></div>
+        </div>
+        <div class="event-row" id="ev-1783650">
+          <a class="event-main-link" href="https://ra.co/events/1783650" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN OCT 1 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Symmetry</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Symmetry</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/csilla/">CSILLA</a> &middot; <span>Toranzie</span> &middot; <a class="artist-headliner-link" href="/artists/cryfxb/">CRYFXB</a></div>
+        </div>
+        <div class="event-row" id="ev-1778877">
+          <a class="event-main-link" href="https://ra.co/events/1778877" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN SEP 24 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Home Bass</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Symmetry</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/fadeface/">FadeFace</a> &middot; <a class="artist-headliner-link" href="/artists/georgi-naumov/">Georgi Naumov</a> &middot; <span>Lukas Valo</span></div>
+        </div>
+        <div class="event-row" id="ev-1760709">
+          <a class="event-main-link" href="https://ra.co/events/1760709" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT SEP 9 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">MIND FLEXURE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Lady Tazz</span> &middot; <span>Dj ANGELDU$t</span> &middot; <a class="artist-headliner-link" href="/artists/radar/">Radar</a></div>
+        </div>
+        <div class="event-row" id="ev-1756253">
+          <a class="event-main-link" href="https://ra.co/events/1756253" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN AUG 20 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">UNDERBRIDGE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Right Next to The Restaurant Depot 43-40 57th Av Mapeth, NY 11378, Under Kosciuszko Bridge</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Ronaldo</span> &middot; <a class="artist-headliner-link" href="/artists/virus/">Virus</a> &middot; <a class="artist-headliner-link" href="/artists/emp/">EMP</a></div>
+        </div>
+        <div class="event-row" id="ev-1835569">
+          <a class="event-main-link" href="https://ra.co/events/1835569" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI AUG 18 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">ANACRUSA</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Sense Studio</span>
+            </span>
+          </a>
+        </div>
+        <div class="event-row" id="ev-1747563">
+          <a class="event-main-link" href="https://ra.co/events/1747563" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI AUG 4 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">FUNKY MY GROOVE</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/fadeface/">FadeFace</a> &middot; <a class="artist-headliner-link" href="/artists/georgi-naumov/">Georgi Naumov</a> &middot; <a class="artist-headliner-link" href="/artists/virus/">Virus</a></div>
+        </div>
+        <div class="event-row" id="ev-1741010">
+          <a class="event-main-link" href="https://ra.co/events/1741010" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SUN JUL 23 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">INDEPENDANCE TECHNO</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Right Next to The Restaurant Depot Under Kosciuszko Bridge</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/purdy/">Purdy</a> &middot; <span>CATA</span> &middot; <span>Kamal errorr</span></div>
+        </div>
+        <div class="event-row" id="ev-1727003">
+          <a class="event-main-link" href="https://ra.co/events/1727003" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT JUL 8 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Lindsey Herbert, Secret Raver, Adrian Hex, Giovani &amp; Mothrat</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/lindsey-herbert/">Lindsey Herbert</a></div>
+        </div>
+        <div class="event-row" id="ev-1695775">
+          <a class="event-main-link" href="https://ra.co/events/1695775" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT APR 29 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">RAVE STREET</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Under Kosciuzko Bridge</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>bw</span> &middot; <span>Xoce</span> &middot; <span>TeddyRx</span></div>
+        </div>
+        <div class="event-row" id="ev-1688941">
+          <a class="event-main-link" href="https://ra.co/events/1688941" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT APR 22 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Shift presents Binaural Code / Aocram</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Casa Maya</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Aöcram</span></div>
+        </div>
+        <div class="event-row" id="ev-1661125">
+          <a class="event-main-link" href="https://ra.co/events/1661125" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT MAR 18 2023</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Joton</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">ZION</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Joton</span> &middot; <span>A.M.D.</span> &middot; <span>Auspex</span></div>
+        </div>
+          </div>
+        </details>
+        <details class="archive-year-group" data-anio="2022">
+          <summary class="archive-year">2022 &middot; 6 NIGHTS</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-1601335">
+          <a class="event-main-link" href="https://ra.co/events/1601335" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT DEC 3 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Mark Broom in Brooklyn &#39;100% juice Album Tour&#39;</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">The Meadow</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/mark-broom/">Mark Broom</a> &middot; <span>Jumex</span> &middot; <span>A.Arias</span></div>
+        </div>
+        <div class="event-row" id="ev-1570044">
+          <a class="event-main-link" href="https://ra.co/events/1570044" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT AUG 27 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Alex Bau in Brooklyn</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/alex-bau/">Alex Bau</a> &middot; <span>David Velez</span></div>
+        </div>
+        <div class="event-row" id="ev-1555829">
+          <a class="event-main-link" href="https://ra.co/events/1555829" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">FRI AUG 5 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">The Advent Returning to NY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><a class="artist-headliner-link" href="/artists/the-advent/">The Advent</a> &middot; <span>David Velez</span> &middot; <span>Pjay</span></div>
+        </div>
+        <div class="event-row" id="ev-1519305">
+          <a class="event-main-link" href="https://ra.co/events/1519305" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT APR 23 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Temudo + Tensal and many more</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Tensal</span> &middot; <a class="artist-headliner-link" href="/artists/temudo/">Temudo</a> &middot; <span>Holden Federico</span></div>
+        </div>
+        <div class="event-row" id="ev-1514162">
+          <a class="event-main-link" href="https://ra.co/events/1514162" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT APR 9 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Modular live sessions NY</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Klauss</span> &middot; <span>Pjay</span> &middot; <span>TonyDeepDisco</span></div>
+        </div>
+        <div class="event-row" id="ev-1505935">
+          <a class="event-main-link" href="https://ra.co/events/1505935" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT MAR 19 2022</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Shift</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Secret location</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Ambivalent</span> &middot; <span>138</span></div>
+        </div>
+          </div>
+        </details>
+        <details class="archive-year-group" data-anio="2021">
+          <summary class="archive-year">2021 &middot; 1 NIGHT</summary>
+          <div class="archive-year-items">
+        <div class="event-row" id="ev-1457559">
+          <a class="event-main-link" href="https://ra.co/events/1457559" target="_blank" rel="noopener">
+            <span class="event-details">
+              <span class="event-date">SAT AUG 21 2021</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-title">Rave Resistence</span>
+              <span class="event-sep">&middot;</span>
+              <span class="event-venue">Outdoors Brooklyn</span>
+            </span>
+          </a>
+          <div class="event-headliners"><span>Lukas Valo</span></div>
+        </div>
+          </div>
+        </details>
+        <!-- /ARCHIVE_ITEMS -->
+      </div>
+    </section>
+
+    <!-- Sección Artists -->
+    <section id="artists" class="night-section">
+      <h2>ARTISTS</h2>
+      <div class="artists-list">
+        <!-- ARTISTS_ITEMS -->
+        <a class="artist-row" href="/artists/secret-raver/">
+          <span class="artist-name">Secret Raver</span>
+          <span class="artist-dates">NEXT NOV 1</span>
+        </a>
+        <a class="artist-row" href="/artists/adrian-hex/">
+          <span class="artist-name">Adrian Hex</span>
+          <span class="artist-dates">NEXT NOV 1</span>
+        </a>
+        <a class="artist-row" href="/artists/giovani/">
+          <span class="artist-name">Giovani</span>
+          <span class="artist-dates">NEXT NOV 1</span>
+        </a>
+        <a class="artist-row" href="/artists/ste-vi/">
+          <span class="artist-name">STE-VÍ</span>
+          <span class="artist-dates">NEXT NOV 1</span>
+        </a>
+        <a class="artist-row" href="/artists/f92/">
+          <span class="artist-name">F92</span>
+          <span class="artist-dates">8 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/jay-york/">
+          <span class="artist-name">jay york</span>
+          <span class="artist-dates">7 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/csilla/">
+          <span class="artist-name">CSILLA</span>
+          <span class="artist-dates">6 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/n1na/">
+          <span class="artist-name">N1NA</span>
+          <span class="artist-dates">6 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/fadeface/">
+          <span class="artist-name">FadeFace</span>
+          <span class="artist-dates">NEXT NOV 1</span>
+        </a>
+        <a class="artist-row" href="/artists/offtrack/">
+          <span class="artist-name">Offtrack</span>
+          <span class="artist-dates">5 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/purdy/">
+          <span class="artist-name">Purdy</span>
+          <span class="artist-dates">5 NIGHTS</span>
+        </a>
+        <a class="artist-row" href="/artists/georgi-naumov/">
+          <span class="artist-name">Georgi Naumov</span>
+          <span class="artist-dates">5 NIGHTS</span>
+        </a>
+        <!-- /ARTISTS_ITEMS -->
+      </div>
+      <div class="artists-more">
+        <a class="btn-more-artists" href="/artists/">All 44 artists &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Sección House rules -->
+    <section id="house-rules" class="night-section">
+      <h2>HOUSE RULES</h2>
+      <ol class="rules-list">
+        <li class="rule-item">
+          <span class="rule-num">01</span>
+          <p class="rule-text">21+.</p>
+        </li>
+        <li class="rule-item">
+          <span class="rule-num">02</span>
+          <p class="rule-text">Everyone is welcome. Racism, sexism, misogyny, homophobia, transphobia, harassment and discrimination stay outside.</p>
+        </li>
+        <li class="rule-item">
+          <span class="rule-num">03</span>
+          <p class="rule-text">Respect personal space. Consent is essential.</p>
+        </li>
+        <li class="rule-item">
+          <span class="rule-num">04</span>
+          <p class="rule-text">Look out for each other. If something feels wrong, find our staff or security.</p>
+        </li>
+        <li class="rule-item">
+          <span class="rule-num">05</span>
+          <p class="rule-text">Tickets only on Resident Advisor.</p>
+        </li>
+      </ol>
+    </section>
+
+              <!-- Sección Inner Circle (anterior #fin) -->
+    <section id="inner-circle" class="night-section fin-section">
+      <span id="fin" class="anchor-fin" aria-hidden="true"></span>
+      <div class="fin-clock" id="ic-clock">00:00</div>
+      <p class="ic-kicker">SHIFT NYC · INNER CIRCLE</p>
+      <h2 class="ic-title">The night ends. The list doesn't.</h2>
+      <p class="ic-desc">First word on dates and ticket links. Email, and texts if you want them.</p>
+
+      <!-- Tecla de unirse -->
+      <div class="ic-key-wrap" id="ic-key-wrap">
+        <button type="button" class="ic-key-btn" id="btn-ic-join" aria-label="Join Inner Circle">
+          <span class="ic-key-cap">
+            <svg class="ic-key-svg" xmlns="http://www.w3.org/2000/svg" viewBox="67 151 1979 439" fill="currentColor" fill-rule="evenodd" aria-hidden="true">
+              <path d="M 128.509 154.661 C 100.645 160.630, 77.738 182.153, 70.935 208.756 C 69.070 216.044, 69 221.061, 69 346.464 L 69 476.607 71.568 481.761 C 73.585 485.808, 84.706 497.381, 123.318 535.612 C 158.269 570.218, 173.701 584.844, 176.650 586.157 C 180.679 587.951, 207.320 587.998, 1081.650 587.753 L 1982.500 587.500 1990.901 584.568 C 2010.255 577.812, 2027.740 561.985, 2035.889 543.846 C 2042.918 528.202, 2042.434 538.640, 2042.755 395.502 C 2043.042 267.503, 2043.028 266.450, 2040.972 259.502 L 2038.900 252.500 2015.200 229.210 C 1947.147 162.333, 1939.183 154.832, 1935.276 153.924 C 1933.127 153.425, 1544.588 153.073, 1033.500 153.105 C 239.783 153.156, 134.688 153.337, 128.509 154.661 M 128 180.276 C 111.034 186.081, 98.660 198.807, 94.582 214.644 C 93.180 220.088, 93 235.057, 93 345.872 L 93 470.955 139.750 517.445 L 186.500 563.935 1079.701 563.968 C 1730.256 563.991, 1974.341 563.699, 1978.201 562.890 C 1996.356 559.089, 2014.142 541.130, 2017.942 522.763 C 2018.701 519.091, 2018.950 479.597, 2018.765 392.091 L 2018.500 266.682 1973.500 222.351 L 1928.500 178.021 1031.500 178.036 L 134.500 178.052 128 180.276 M 289.379 268.250 C 265.206 292.038, 226.545 329.919, 203.464 352.432 C 180.384 374.944, 161.350 393.732, 161.167 394.182 C 160.983 394.632, 181.792 395, 207.408 395 L 253.983 395 254.241 449.750 L 254.500 504.500 332.390 504.756 C 387.981 504.939, 410.660 504.697, 411.608 503.911 C 412.687 503.015, 412.873 493.257, 412.604 451.655 C 412.421 423.520, 412.492 399.262, 412.761 397.750 L 413.250 395 460.625 395 C 486.681 395, 508 394.661, 508 394.247 C 508 393.833, 481.113 367.140, 448.250 334.929 C 359.114 247.561, 335.766 225, 334.488 225 C 333.851 225, 313.553 244.462, 289.379 268.250 M 715.500 273.602 C 693.900 277.340, 675.634 287.037, 661.316 302.369 C 652.516 311.792, 648.255 319.888, 642.811 337.530 C 638.796 350.541, 638.505 352.255, 638.573 362.500 C 638.637 372.075, 638.975 374.212, 641.186 379 C 646.249 389.968, 656.368 398.229, 669.787 402.351 C 676.201 404.321, 679.506 404.437, 744.097 404.956 C 819.912 405.566, 815.668 405.107, 814.644 412.584 C 814.330 414.873, 813.537 417.921, 812.882 419.359 C 810.242 425.154, 815.104 424.848, 715.869 425.479 C 642.476 425.946, 624.253 426.318, 623.201 427.371 C 621.633 428.938, 605.908 479.043, 606.622 480.197 C 606.895 480.639, 653.329 480.994, 709.809 480.987 C 806.783 480.974, 813.013 480.868, 821.710 479.073 C 839.280 475.447, 854.190 467.589, 866.435 455.500 C 879.235 442.864, 883.034 434.763, 891.058 403 C 893.719 392.469, 894.148 389.161, 893.785 382 C 892.926 365.056, 884.236 355.258, 864.661 349.166 C 860.163 347.765, 850.642 347.531, 790.500 347.340 C 752.550 347.219, 720.295 347.093, 718.821 347.060 C 713.028 346.930, 711.393 341.135, 714.943 333.316 C 718.488 325.509, 711.827 326, 814.259 326 C 885.770 326, 905.988 325.728, 907.323 324.750 C 909.347 323.267, 924.463 275.648, 923.613 273.433 C 923.121 272.153, 910.201 271.980, 823.274 272.090 C 743.256 272.192, 721.916 272.491, 715.500 273.602 M 961.253 273.250 C 960.707 273.938, 957.014 285.075, 953.047 298 C 949.079 310.925, 941.858 334.325, 937 350 C 932.142 365.675, 924.539 390.425, 920.104 405 C 915.670 419.575, 908.741 442.101, 904.706 455.057 C 900.672 468.014, 897.550 479.151, 897.769 479.807 C 898.375 481.624, 966.332 481.510, 967.843 479.689 C 968.441 478.968, 971.003 471.656, 973.535 463.439 C 982.695 433.717, 991.285 407.474, 992.255 406.250 C 993.694 404.433, 1130 404.418, 1130 406.234 C 1130 406.913, 1125.227 423.339, 1119.394 442.737 C 1113.560 462.134, 1109.046 478.678, 1109.362 479.502 C 1109.857 480.792, 1114.626 480.998, 1143.719 480.985 C 1162.298 480.976, 1178.123 480.575, 1178.885 480.092 C 1179.647 479.610, 1182.422 471.854, 1185.051 462.857 C 1192.762 436.470, 1204.779 396.794, 1220.292 346.500 C 1240.213 281.920, 1242.223 275.023, 1241.598 273.395 C 1241.139 272.198, 1235.581 272.015, 1206.318 272.237 L 1171.583 272.500 1170.344 276 C 1169.663 277.925, 1167.269 285.800, 1165.023 293.500 C 1162.777 301.200, 1158.193 316.347, 1154.836 327.160 L 1148.733 346.819 1137.617 347.369 C 1131.502 347.672, 1100.400 347.825, 1068.500 347.710 C 1017.529 347.525, 1010.542 347.318, 1010.846 346 C 1011.036 345.175, 1014.073 335.293, 1017.596 324.040 C 1027.907 291.096, 1032.320 275.277, 1031.670 273.583 C 1031.132 272.181, 1027.122 272, 996.654 272 C 970.322 272, 962.012 272.293, 961.253 273.250 M 1275.786 273.250 C 1274.909 273.938, 1271.862 282.375, 1269.015 292 C 1262.087 315.429, 1245.234 369.195, 1232.498 408.500 C 1218.645 451.252, 1210.741 477.884, 1211.398 479.596 C 1212.149 481.552, 1283.207 481.701, 1284.732 479.750 C 1285.270 479.063, 1289.418 466.125, 1293.951 451 C 1298.484 435.875, 1305.031 414.275, 1308.501 403 C 1311.971 391.725, 1318.025 371.700, 1321.954 358.500 C 1325.883 345.300, 1333.179 321.110, 1338.166 304.744 C 1345.574 280.437, 1347.008 274.715, 1345.995 273.494 C 1344.940 272.223, 1339.733 272, 1311.069 272 C 1285.637 272, 1276.991 272.306, 1275.786 273.250 M 1416.500 274.438 C 1405.558 277.282, 1398.032 280.544, 1390.325 285.784 C 1384.739 289.581, 1374.663 299.181, 1371.455 303.761 C 1367.232 309.790, 1363.383 320.292, 1354.506 350 C 1349.165 367.875, 1338.342 404.018, 1330.455 430.318 C 1322.568 456.618, 1316.364 478.786, 1316.669 479.580 C 1317.141 480.809, 1322.532 480.986, 1352.779 480.763 L 1388.334 480.500 1391.093 472 C 1394.237 462.315, 1410.507 410.659, 1411.486 407.256 L 1412.131 405.012 1492.304 404.756 L 1572.477 404.500 1576.731 390.500 C 1586.838 357.235, 1588.367 351.147, 1587.025 349.530 C 1585.905 348.181, 1576.501 348, 1507.378 348 C 1464.270 348, 1428.991 347.663, 1428.980 347.250 C 1428.969 346.837, 1430.394 341.887, 1432.147 336.250 L 1435.335 326 1518.233 326 C 1572.632 326, 1601.786 325.650, 1603.036 324.981 C 1604.357 324.274, 1606.311 319.602, 1609.415 309.731 C 1618.552 280.670, 1620.080 274.801, 1618.881 273.357 C 1617.947 272.231, 1601.399 272.008, 1521.628 272.049 L 1425.500 272.098 1416.500 274.438 M 1644.142 272.891 C 1641.993 274.253, 1627.872 323.141, 1629.175 324.711 C 1630.020 325.729, 1640.050 326, 1676.969 326 L 1723.693 326 1717.464 347.250 C 1711.005 369.288, 1683.601 459.211, 1679.599 471.500 C 1678.345 475.350, 1677.510 479.063, 1677.743 479.750 C 1678.403 481.697, 1752.296 481.553, 1753.916 479.601 C 1754.554 478.832, 1757.342 470.845, 1760.111 461.851 C 1762.880 452.858, 1770.788 427.500, 1777.684 405.500 C 1784.580 383.500, 1792.956 356.613, 1796.298 345.750 L 1802.373 326 1850.496 326 C 1887.483 326, 1898.984 325.711, 1900.199 324.750 C 1901.069 324.063, 1903.202 318.550, 1904.938 312.500 C 1906.675 306.450, 1909.938 295.577, 1912.189 288.338 C 1914.440 281.100, 1916.008 274.462, 1915.672 273.588 C 1915.120 272.148, 1902.511 272.001, 1780.281 272.015 C 1706.152 272.024, 1644.889 272.418, 1644.142 272.891 M 295.994 321.121 C 274.822 341.415, 257.353 358.456, 257.174 358.989 C 256.973 359.586, 264.450 360.061, 276.674 360.229 L 296.500 360.500 296.127 412.250 L 295.754 464 333.377 464 L 371 464 371 412 L 371 360 391 360 C 402.054 360, 411 359.601, 411 359.108 C 411 358.255, 345.278 293.577, 337.994 287.261 L 334.488 284.221 295.994 321.121" stroke="none" fill="currentColor" fill-rule="evenodd"/>
+            </svg>
+          </span>
+        </button>
+        <p class="ic-key-hint" id="ic-key-hint">
+          <span class="desktop-hint">PRESS SHIFT TO JOIN</span>
+          <span class="touch-hint">TAP TO JOIN</span>
+        </p>
+      </div>
+
+      <!-- Contenedor del Formulario / Éxito -->
+      <div class="ic-form-wrap is-hidden" id="ic-form-wrap">
+        <!-- Formulario propio Brevo -->
+        <form id="ic-form" class="ic-form" method="POST" action="https://78ce9e91.sibforms.com/serve/MUIFAJ-uVHK81C949oAIPTW0du-WUV66VRTtt91HSqU4jEpmxCWj6ZYGXTjjdyg8QgZCarIOzbrlhP7VHTZf8f63c0nqTjM_LOgyCVa6VBVdqxRnnWJ0nq5cnq2F0mIK21cXkMatFj7SxSah85DKPywL5i47g7m_btP81achVjiPRRIk3UrdNu4P2KfmJJlYNZvqaNudCWEhldEj0Q==" novalidate>
+          <input type="hidden" name="email_address_check" value="">
+          <input type="hidden" name="locale" value="en">
+          <input type="hidden" name="SMS__COUNTRY_CODE" value="+1">
+
+          <!-- Fila 1: EMAIL -->
+          <div class="ic-row" data-row="1">
+            <label for="ic-email" class="ic-label"><span class="ic-label-text" data-text="EMAIL">EMAIL</span></label>
+            <input type="email" id="ic-email" name="EMAIL" class="ic-input" placeholder="you@email.com" autocomplete="email" required>
+            <div class="ic-error" id="err-email" aria-live="polite"></div>
+          </div>
+
+          <!-- Fila 2: FIRST NAME -->
+          <div class="ic-row" data-row="2">
+            <label for="ic-nombre" class="ic-label"><span class="ic-label-text" data-text="FIRST NAME">FIRST NAME</span></label>
+            <input type="text" id="ic-nombre" name="NOMBRE" class="ic-input" placeholder="First name" autocomplete="given-name">
+          </div>
+
+          <!-- Fila 3: MOBILE NUMBER (OPTIONAL) -->
+          <div class="ic-row" data-row="3">
+            <label for="ic-sms" class="ic-label"><span class="ic-label-text" data-text="MOBILE NUMBER (OPTIONAL)">MOBILE NUMBER (OPTIONAL)</span></label>
+            <div class="ic-tel-wrap">
+              <span class="ic-tel-prefix">+1</span>
+              <!-- name="SMS" omitido intencionalmente en HTML estático: solo se envía tras verificar SMS_OPTIN vía JS -->
+              <input type="tel" id="ic-sms" class="ic-input ic-input-tel" placeholder="Mobile" autocomplete="tel-national" inputmode="tel">
+            </div>
+            <div class="ic-error" id="err-sms" aria-live="polite"></div>
+          </div>
+
+          <!-- Fila 4: Casilla SMS -->
+          <div class="ic-row ic-row-check" data-row="4">
+            <label class="ic-checkbox-label">
+              <input type="checkbox" id="ic-sms-optin" name="SMS_OPTIN" value="1" class="ic-checkbox">
+              <span class="ic-checkbox-box"></span>
+              <span class="ic-checkbox-text">Text me SHIFT NYC dates and ticket links. Recurring automated marketing text messages (SMS) to the number above. Consent is not a condition of purchase. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Your mobile information will not be sold or shared with third parties. Questions: <a href="mailto:info@shift-nyc.com" class="ic-link">info@shift-nyc.com</a>. <a href="/privacy.html" class="ic-link" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms.html" class="ic-link" target="_blank" rel="noopener">Terms</a>.</span>
+            </label>
+          </div>
+
+          <!-- Fila 5: Casilla Email -->
+          <div class="ic-row ic-row-check" data-row="5">
+            <label class="ic-checkbox-label">
+              <input type="checkbox" id="ic-optin" name="OPT_IN" value="1" class="ic-checkbox" required>
+              <span class="ic-checkbox-box"></span>
+              <span class="ic-checkbox-text">Email me SHIFT NYC dates, early access and ticket links. Unsubscribe anytime.</span>
+            </label>
+            <div class="ic-error" id="err-optin" aria-live="polite"></div>
+          </div>
+
+          <!-- Fila 6: Error general + Submit + Legal -->
+          <div class="ic-row ic-row-submit" data-row="6">
+            <div class="ic-general-error" id="err-general" aria-live="polite"></div>
+            <button type="submit" id="btn-ic-submit" class="ic-submit-btn">JOIN ⇧</button>
+            <p class="ic-legal-notice">Texts: reply STOP to opt out, HELP for help. Questions: <a href="mailto:info@shift-nyc.com" class="ic-link">info@shift-nyc.com</a>. <a href="/privacy.html" class="ic-link" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms.html" class="ic-link" target="_blank" rel="noopener">Terms</a>.</p>
+          </div>
+        </form>
+
+        <!-- Estado de Éxito -->
+        <div class="ic-success" id="ic-success" hidden>
+          <h3 class="ic-success-title">You're in.</h3>
+          <p class="ic-success-desc">First word lands in your inbox.</p>
+          <button type="button" class="ic-reset-btn" id="btn-ic-reset">Not you? Join with another email</button>
+        </div>
+      </div>
+
+      <a class="fin-link" href="https://ra.co/promoters/101532" target="_blank" rel="noopener">Follow SHIFT on RA ⇧</a>
+    </section>
+  </main>
+
+  <!-- Visor de fotos a pantalla completa -->
+  <dialog id="photo-viewer" class="photo-viewer" aria-label="Photo viewer">
+    <button type="button" class="viewer-close">CLOSE</button>
+    <div class="viewer-content">
+      <img class="viewer-img" src="" alt="">
+      <p class="viewer-credit"></p>
     </div>
-    <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width:540px; text-align:center; background-color:rgba(255,255,255,1); border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
-      <form id="sib-form" method="POST" action="https://78ce9e91.sibforms.com/serve/MUIFAJ-uVHK81C949oAIPTW0du-WUV66VRTtt91HSqU4jEpmxCWj6ZYGXTjjdyg8QgZCarIOzbrlhP7VHTZf8f63c0nqTjM_LOgyCVa6VBVdqxRnnWJ0nq5cnq2F0mIK21cXkMatFj7SxSah85DKPywL5i47g7m_btP81achVjiPRRIk3UrdNu4P2KfmJJlYNZvqaNudCWEhldEj0Q==" data-type="subscription">
-
-
-
-        <div style="padding: 8px 0;">
-
-
-
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-
-                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="EMAIL" data-required="*">Email</label>
-
-
-
-
-                <div class="entry__field">
-
-                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" placeholder="you@email.com" data-required="true" required />
-
-                </div>
-
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-
-
-        <div style="padding: 8px 0;">
-
-
-
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-
-                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="NOMBRE">First name</label>
-
-
-
-
-                <div class="entry__field">
-
-                  <input class="input " maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" placeholder="First name" />
-
-                </div>
-
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-
-
-        <div style="padding: 8px 0;">
-
-
-
-          <div class="sib-sms-field sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-
-                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="SMS">Mobile number (optional)</label>
-
-
-
-
-
-
-
-
-                <div class="sib-sms-input-wrapper" style="direction:ltr">
-                  <div class="sib-sms-input" data-placeholder="Mobile" data-country-code="US" data-value="" data-attributename="SMS">
-                    <div class="entry__field">
-                      <select class="input" name="SMS__COUNTRY_CODE">
-
-                        <option value="+93">
-                          +93 AF
-                        </option>
-
-                        <option value="+358">
-                          +358 AX
-                        </option>
-
-                        <option value="+355">
-                          +355 AL
-                        </option>
-
-                        <option value="+213">
-                          +213 DZ
-                        </option>
-
-                        <option value="+1684">
-                          +1684 AS
-                        </option>
-
-                        <option value="+376">
-                          +376 AD
-                        </option>
-
-                        <option value="+244">
-                          +244 AO
-                        </option>
-
-                        <option value="+1264">
-                          +1264 AI
-                        </option>
-
-                        <option value="+672">
-                          +672 AQ
-                        </option>
-
-                        <option value="+1268">
-                          +1268 AG
-                        </option>
-
-                        <option value="+54">
-                          +54 AR
-                        </option>
-
-                        <option value="+374">
-                          +374 AM
-                        </option>
-
-                        <option value="+297">
-                          +297 AW
-                        </option>
-
-                        <option value="+61">
-                          +61 AU
-                        </option>
-
-                        <option value="+43">
-                          +43 AT
-                        </option>
-
-                        <option value="+994">
-                          +994 AZ
-                        </option>
-
-                        <option value="+1242">
-                          +1242 BS
-                        </option>
-
-                        <option value="+973">
-                          +973 BH
-                        </option>
-
-                        <option value="+880">
-                          +880 BD
-                        </option>
-
-                        <option value="+1246">
-                          +1246 BB
-                        </option>
-
-                        <option value="+375">
-                          +375 BY
-                        </option>
-
-                        <option value="+32">
-                          +32 BE
-                        </option>
-
-                        <option value="+501">
-                          +501 BZ
-                        </option>
-
-                        <option value="+229">
-                          +229 BJ
-                        </option>
-
-                        <option value="+1441">
-                          +1441 BM
-                        </option>
-
-                        <option value="+975">
-                          +975 BT
-                        </option>
-
-                        <option value="+591">
-                          +591 BO
-                        </option>
-
-                        <option value="+599">
-                          +599 BQ
-                        </option>
-
-                        <option value="+387">
-                          +387 BA
-                        </option>
-
-                        <option value="+267">
-                          +267 BW
-                        </option>
-
-                        <option value="+47">
-                          +47 BV
-                        </option>
-
-                        <option value="+55">
-                          +55 BR
-                        </option>
-
-                        <option value="+246">
-                          +246 IO
-                        </option>
-
-                        <option value="+673">
-                          +673 BN
-                        </option>
-
-                        <option value="+359">
-                          +359 BG
-                        </option>
-
-                        <option value="+226">
-                          +226 BF
-                        </option>
-
-                        <option value="+257">
-                          +257 BI
-                        </option>
-
-                        <option value="+855">
-                          +855 KH
-                        </option>
-
-                        <option value="+237">
-                          +237 CM
-                        </option>
-
-                        <option value="+1">
-                          +1 CA
-                        </option>
-
-                        <option value="+34">
-                          +34 IC
-                        </option>
-
-                        <option value="+238">
-                          +238 CV
-                        </option>
-
-                        <option value="+1345">
-                          +1345 KY
-                        </option>
-
-                        <option value="+236">
-                          +236 CF
-                        </option>
-
-                        <option value="+34">
-                          +34 EA
-                        </option>
-
-                        <option value="+235">
-                          +235 TD
-                        </option>
-
-                        <option value="+56">
-                          +56 CL
-                        </option>
-
-                        <option value="+86">
-                          +86 CN
-                        </option>
-
-                        <option value="+61">
-                          +61 CX
-                        </option>
-
-                        <option value="+61">
-                          +61 CC
-                        </option>
-
-                        <option value="+57">
-                          +57 CO
-                        </option>
-
-                        <option value="+269">
-                          +269 KM
-                        </option>
-
-                        <option value="+242">
-                          +242 CG
-                        </option>
-
-                        <option value="+243">
-                          +243 CD
-                        </option>
-
-                        <option value="+682">
-                          +682 CK
-                        </option>
-
-                        <option value="+506">
-                          +506 CR
-                        </option>
-
-                        <option value="+225">
-                          +225 CI
-                        </option>
-
-                        <option value="+385">
-                          +385 HR
-                        </option>
-
-                        <option value="+53">
-                          +53 CU
-                        </option>
-
-                        <option value="+599">
-                          +599 CW
-                        </option>
-
-                        <option value="+357">
-                          +357 CY
-                        </option>
-
-                        <option value="+420">
-                          +420 CZ
-                        </option>
-
-                        <option value="+45">
-                          +45 DK
-                        </option>
-
-                        <option value="+253">
-                          +253 DJ
-                        </option>
-
-                        <option value="+1767">
-                          +1767 DM
-                        </option>
-
-                        <option value="+1809">
-                          +1809 DO
-                        </option>
-
-                        <option value="+1829">
-                          +1829 DO
-                        </option>
-
-                        <option value="+1849">
-                          +1849 DO
-                        </option>
-
-                        <option value="+593">
-                          +593 EC
-                        </option>
-
-                        <option value="+20">
-                          +20 EG
-                        </option>
-
-                        <option value="+503">
-                          +503 SV
-                        </option>
-
-                        <option value="+240">
-                          +240 GQ
-                        </option>
-
-                        <option value="+291">
-                          +291 ER
-                        </option>
-
-                        <option value="+372">
-                          +372 EE
-                        </option>
-
-                        <option value="+251">
-                          +251 ET
-                        </option>
-
-                        <option value="+500">
-                          +500 FK
-                        </option>
-
-                        <option value="+298">
-                          +298 FO
-                        </option>
-
-                        <option value="+679">
-                          +679 FJ
-                        </option>
-
-                        <option value="+358">
-                          +358 FI
-                        </option>
-
-                        <option value="+33">
-                          +33 FR
-                        </option>
-
-                        <option value="+594">
-                          +594 GF
-                        </option>
-
-                        <option value="+689">
-                          +689 PF
-                        </option>
-
-                        <option value="+262">
-                          +262 TF
-                        </option>
-
-                        <option value="+241">
-                          +241 GA
-                        </option>
-
-                        <option value="+220">
-                          +220 GM
-                        </option>
-
-                        <option value="+995">
-                          +995 GE
-                        </option>
-
-                        <option value="+49">
-                          +49 DE
-                        </option>
-
-                        <option value="+233">
-                          +233 GH
-                        </option>
-
-                        <option value="+350">
-                          +350 GI
-                        </option>
-
-                        <option value="+30">
-                          +30 GR
-                        </option>
-
-                        <option value="+299">
-                          +299 GL
-                        </option>
-
-                        <option value="+1473">
-                          +1473 GD
-                        </option>
-
-                        <option value="+590">
-                          +590 GP
-                        </option>
-
-                        <option value="+1671">
-                          +1671 GU
-                        </option>
-
-                        <option value="+502">
-                          +502 GT
-                        </option>
-
-                        <option value="+44">
-                          +44 GG
-                        </option>
-
-                        <option value="+224">
-                          +224 GN
-                        </option>
-
-                        <option value="+245">
-                          +245 GW
-                        </option>
-
-                        <option value="+592">
-                          +592 GY
-                        </option>
-
-                        <option value="+509">
-                          +509 HT
-                        </option>
-
-                        <option value="+672">
-                          +672 HM
-                        </option>
-
-                        <option value="+379">
-                          +379 VA
-                        </option>
-
-                        <option value="+504">
-                          +504 HN
-                        </option>
-
-                        <option value="+852">
-                          +852 HK
-                        </option>
-
-                        <option value="+36">
-                          +36 HU
-                        </option>
-
-                        <option value="+354">
-                          +354 IS
-                        </option>
-
-                        <option value="+91">
-                          +91 IN
-                        </option>
-
-                        <option value="+62">
-                          +62 ID
-                        </option>
-
-                        <option value="+98">
-                          +98 IR
-                        </option>
-
-                        <option value="+964">
-                          +964 IQ
-                        </option>
-
-                        <option value="+353">
-                          +353 IE
-                        </option>
-
-                        <option value="+44">
-                          +44 IM
-                        </option>
-
-                        <option value="+972">
-                          +972 IL
-                        </option>
-
-                        <option value="+39">
-                          +39 IT
-                        </option>
-
-                        <option value="+1876">
-                          +1876 JM
-                        </option>
-
-                        <option value="+81">
-                          +81 JP
-                        </option>
-
-                        <option value="+44">
-                          +44 JE
-                        </option>
-
-                        <option value="+962">
-                          +962 JO
-                        </option>
-
-                        <option value="+7">
-                          +7 KZ
-                        </option>
-
-                        <option value="+254">
-                          +254 KE
-                        </option>
-
-                        <option value="+686">
-                          +686 KI
-                        </option>
-
-                        <option value="+850">
-                          +850 KP
-                        </option>
-
-                        <option value="+82">
-                          +82 KR
-                        </option>
-
-                        <option value="+965">
-                          +965 KW
-                        </option>
-
-                        <option value="+996">
-                          +996 KG
-                        </option>
-
-                        <option value="+856">
-                          +856 LA
-                        </option>
-
-                        <option value="+371">
-                          +371 LV
-                        </option>
-
-                        <option value="+961">
-                          +961 LB
-                        </option>
-
-                        <option value="+266">
-                          +266 LS
-                        </option>
-
-                        <option value="+231">
-                          +231 LR
-                        </option>
-
-                        <option value="+218">
-                          +218 LY
-                        </option>
-
-                        <option value="+423">
-                          +423 LI
-                        </option>
-
-                        <option value="+370">
-                          +370 LT
-                        </option>
-
-                        <option value="+352">
-                          +352 LU
-                        </option>
-
-                        <option value="+853">
-                          +853 MO
-                        </option>
-
-                        <option value="+389">
-                          +389 MK
-                        </option>
-
-                        <option value="+261">
-                          +261 MG
-                        </option>
-
-                        <option value="+265">
-                          +265 MW
-                        </option>
-
-                        <option value="+60">
-                          +60 MY
-                        </option>
-
-                        <option value="+960">
-                          +960 MV
-                        </option>
-
-                        <option value="+223">
-                          +223 ML
-                        </option>
-
-                        <option value="+356">
-                          +356 MT
-                        </option>
-
-                        <option value="+692">
-                          +692 MH
-                        </option>
-
-                        <option value="+596">
-                          +596 MQ
-                        </option>
-
-                        <option value="+222">
-                          +222 MR
-                        </option>
-
-                        <option value="+230">
-                          +230 MU
-                        </option>
-
-                        <option value="+262">
-                          +262 YT
-                        </option>
-
-                        <option value="+52">
-                          +52 MX
-                        </option>
-
-                        <option value="+691">
-                          +691 FM
-                        </option>
-
-                        <option value="+373">
-                          +373 MD
-                        </option>
-
-                        <option value="+377">
-                          +377 MC
-                        </option>
-
-                        <option value="+976">
-                          +976 MN
-                        </option>
-
-                        <option value="+382">
-                          +382 ME
-                        </option>
-
-                        <option value="+1664">
-                          +1664 MS
-                        </option>
-
-                        <option value="+212">
-                          +212 MA
-                        </option>
-
-                        <option value="+258">
-                          +258 MZ
-                        </option>
-
-                        <option value="+95">
-                          +95 MM
-                        </option>
-
-                        <option value="+264">
-                          +264 NA
-                        </option>
-
-                        <option value="+674">
-                          +674 NR
-                        </option>
-
-                        <option value="+977">
-                          +977 NP
-                        </option>
-
-                        <option value="+31">
-                          +31 NL
-                        </option>
-
-                        <option value="+687">
-                          +687 NC
-                        </option>
-
-                        <option value="+64">
-                          +64 NZ
-                        </option>
-
-                        <option value="+505">
-                          +505 NI
-                        </option>
-
-                        <option value="+227">
-                          +227 NE
-                        </option>
-
-                        <option value="+234">
-                          +234 NG
-                        </option>
-
-                        <option value="+683">
-                          +683 NU
-                        </option>
-
-                        <option value="+672">
-                          +672 NF
-                        </option>
-
-                        <option value="+1670">
-                          +1670 MP
-                        </option>
-
-                        <option value="+47">
-                          +47 NO
-                        </option>
-
-                        <option value="+968">
-                          +968 OM
-                        </option>
-
-                        <option value="+92">
-                          +92 PK
-                        </option>
-
-                        <option value="+680">
-                          +680 PW
-                        </option>
-
-                        <option value="+970">
-                          +970 PS
-                        </option>
-
-                        <option value="+507">
-                          +507 PA
-                        </option>
-
-                        <option value="+675">
-                          +675 PG
-                        </option>
-
-                        <option value="+595">
-                          +595 PY
-                        </option>
-
-                        <option value="+51">
-                          +51 PE
-                        </option>
-
-                        <option value="+63">
-                          +63 PH
-                        </option>
-
-                        <option value="+64">
-                          +64 PN
-                        </option>
-
-                        <option value="+48">
-                          +48 PL
-                        </option>
-
-                        <option value="+351">
-                          +351 PT
-                        </option>
-
-                        <option value="+1787">
-                          +1787 PR
-                        </option>
-
-                        <option value="+974">
-                          +974 QA
-                        </option>
-
-                        <option value="+383">
-                          +383 XK
-                        </option>
-
-                        <option value="+262">
-                          +262 RE
-                        </option>
-
-                        <option value="+40">
-                          +40 RO
-                        </option>
-
-                        <option value="+7">
-                          +7 RU
-                        </option>
-
-                        <option value="+250">
-                          +250 RW
-                        </option>
-
-                        <option value="+590">
-                          +590 BL
-                        </option>
-
-                        <option value="+290">
-                          +290 SH
-                        </option>
-
-                        <option value="+1869">
-                          +1869 KN
-                        </option>
-
-                        <option value="+1758">
-                          +1758 LC
-                        </option>
-
-                        <option value="+590">
-                          +590 MF
-                        </option>
-
-                        <option value="+508">
-                          +508 PM
-                        </option>
-
-                        <option value="+1784">
-                          +1784 VC
-                        </option>
-
-                        <option value="+685">
-                          +685 WS
-                        </option>
-
-                        <option value="+378">
-                          +378 SM
-                        </option>
-
-                        <option value="+239">
-                          +239 ST
-                        </option>
-
-                        <option value="+966">
-                          +966 SA
-                        </option>
-
-                        <option value="+221">
-                          +221 SN
-                        </option>
-
-                        <option value="+381">
-                          +381 RS
-                        </option>
-
-                        <option value="+248">
-                          +248 SC
-                        </option>
-
-                        <option value="+232">
-                          +232 SL
-                        </option>
-
-                        <option value="+65">
-                          +65 SG
-                        </option>
-
-                        <option value="+1721">
-                          +1721 SX
-                        </option>
-
-                        <option value="+421">
-                          +421 SK
-                        </option>
-
-                        <option value="+386">
-                          +386 SI
-                        </option>
-
-                        <option value="+677">
-                          +677 SB
-                        </option>
-
-                        <option value="+252">
-                          +252 SO
-                        </option>
-
-                        <option value="+27">
-                          +27 ZA
-                        </option>
-
-                        <option value="+500">
-                          +500 GS
-                        </option>
-
-                        <option value="+211">
-                          +211 SS
-                        </option>
-
-                        <option value="+34">
-                          +34 ES
-                        </option>
-
-                        <option value="+94">
-                          +94 LK
-                        </option>
-
-                        <option value="+249">
-                          +249 SD
-                        </option>
-
-                        <option value="+597">
-                          +597 SR
-                        </option>
-
-                        <option value="+47">
-                          +47 SJ
-                        </option>
-
-                        <option value="+268">
-                          +268 SZ
-                        </option>
-
-                        <option value="+46">
-                          +46 SE
-                        </option>
-
-                        <option value="+41">
-                          +41 CH
-                        </option>
-
-                        <option value="+963">
-                          +963 SY
-                        </option>
-
-                        <option value="+886">
-                          +886 TW
-                        </option>
-
-                        <option value="+992">
-                          +992 TJ
-                        </option>
-
-                        <option value="+255">
-                          +255 TZ
-                        </option>
-
-                        <option value="+66">
-                          +66 TH
-                        </option>
-
-                        <option value="+670">
-                          +670 TL
-                        </option>
-
-                        <option value="+228">
-                          +228 TG
-                        </option>
-
-                        <option value="+690">
-                          +690 TK
-                        </option>
-
-                        <option value="+676">
-                          +676 TO
-                        </option>
-
-                        <option value="+1868">
-                          +1868 TT
-                        </option>
-
-                        <option value="+216">
-                          +216 TN
-                        </option>
-
-                        <option value="+90">
-                          +90 TR
-                        </option>
-
-                        <option value="+993">
-                          +993 TM
-                        </option>
-
-                        <option value="+1649">
-                          +1649 TC
-                        </option>
-
-                        <option value="+688">
-                          +688 TV
-                        </option>
-
-                        <option value="+256">
-                          +256 UG
-                        </option>
-
-                        <option value="+380">
-                          +380 UA
-                        </option>
-
-                        <option value="+971">
-                          +971 AE
-                        </option>
-
-                        <option value="+44">
-                          +44 GB
-                        </option>
-
-                        <option value="+1">
-                          +1 US
-                        </option>
-
-                        <option value="+246">
-                          +246 UM
-                        </option>
-
-                        <option value="+598">
-                          +598 UY
-                        </option>
-
-                        <option value="+998">
-                          +998 UZ
-                        </option>
-
-                        <option value="+678">
-                          +678 VU
-                        </option>
-
-                        <option value="+58">
-                          +58 VE
-                        </option>
-
-                        <option value="+84">
-                          +84 VN
-                        </option>
-
-                        <option value="+1284">
-                          +1284 VG
-                        </option>
-
-                        <option value="+1340">
-                          +1340 VI
-                        </option>
-
-                        <option value="+681">
-                          +681 WF
-                        </option>
-
-                        <option value="+212">
-                          +212 EH
-                        </option>
-
-                        <option value="+967">
-                          +967 YE
-                        </option>
-
-                        <option value="+260">
-                          +260 ZM
-                        </option>
-
-                        <option value="+263">
-                          +263 ZW
-                        </option>
-
-                      </select>
-                    </div>
-                    <div class="entry__field" style="width: 100%">
-                      <input type="tel" type="text" class="input" id="SMS" name="SMS" autocomplete="off" placeholder="Mobile" />
-                    </div>
-                  </div>
-                  <div class="sib-sms-tooltip">
-                    <div class="sib-sms-tooltip__box">
-                      El campo SMS debe contener entre 6 y 19 cifras e incluir el prefijo del país sin «+» ni «0» delante (ej.: 34xxxxxxxxxxx para España)
-                    </div>
-                    <span class="sib-sms-tooltip__icon">?</span>
-                  </div>
-                </div>
-
-
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-              <label class="entry__error entry__error--secondary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-
-
-        <div style="padding: 8px 0;">
-
-
-          <div class="sib-optin sib-form-block">
-            <div class="form__entry entry_mcq">
-              <div class="form__label-row ">
-
-                <div class="entry__choice" style="">
-                  <label>
-                    <input type="checkbox" class="input_replaced" value="1" id="SMS_OPTIN" name="SMS_OPTIN" />
-
-                    <span class="checkbox checkbox_tick_positive"
-            style="margin-left:"
-            ></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>Text me SHIFT NYC dates and ticket links. Recurring automated marketing text messages (SMS) to the number above. Consent is not a condition of purchase. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Your mobile information will not be sold or shared with third parties. Questions: <a href="mailto:info@shift-nyc.com">info@shift-nyc.com</a>. <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a>.</p></span>
-
-                  </label>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-        <div style="padding: 8px 0;">
-
-
-          <div class="sib-optin sib-form-block" data-required="true">
-            <div class="form__entry entry_mcq">
-              <div class="form__label-row ">
-
-                <div class="entry__choice" style="">
-                  <label>
-                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-
-                    <span class="checkbox checkbox_tick_positive"
-            style="margin-left:"
-            ></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>Email me SHIFT NYC dates, early access and ticket links. Unsubscribe anytime.</p><span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span>
-
-                  </label>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
-
-        </div>
-
-
-
-        <div style="padding: 8px 0;">
-
-
-          <div class="sib-form-block" style="text-align: left">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#FFFFFF; background-color:#3E4857; border-width:0px; border-radius:3px;" form="sib-form" type="submit">
-              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-              </svg>
-              JOIN
-            </button>
-
-
-          </div>
-
-
-
-        </div>
-
-
-
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-
-
-        <input type="hidden" name="locale" value="es">
-
-
-      </form>
-    </div>
-  </div>
-</div>
-  <p class="ic-legal">Texts: reply STOP to opt out, HELP for help. Questions: <a href="mailto:info@shift-nyc.com">info@shift-nyc.com</a>. <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a>.</p>
-  </section>
-
-  <footer>
-    <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a> &middot;
-    <a href="https://ra.co/promoters/101532">Resident Advisor</a> &middot;
-    <a href="https://www.instagram.com/shift.n.y/">Instagram</a> &middot; <a href="mailto:info@shift-nyc.com">info@shift-nyc.com</a>
-  </footer>
-</main>
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Choose a country code';
-  window.LOCALE = 'en';
-
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Check the format and try again.";
-
-  window.REQUIRED_ERROR_MESSAGE = "This field is required. ";
-
-  window.GENERIC_INVALID_MESSAGE = "Check the format and try again.";
-
-  window.INVALID_NUMBER = "Check the format and try again.";
-
-  window.INVALID_DATE = "Enter a valid date";
-
-  window.REQUIRED_MULTISELECT_MESSAGE = 'Select at least one option';
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} list selected',
-      selectedLists: '{quantity} lists selected',
-      selectedOption: '{quantity} selected',
-      selectedOptions: '{quantity} selected',
-    }
-  };
-
-  var AUTOHIDE = Boolean(1);
-</script>
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  </dialog>
+
 </body>
 </html>

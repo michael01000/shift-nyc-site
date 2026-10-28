@@ -1,0 +1,780 @@
+{
+  "_nota": "después de cada evento, npm run build de nuevo para que pase a Archive. eventos sale de RA: correr npm run archivo y luego npm run build",
+  "audio": {
+    "src": "/audio/movement-loop.m4a",
+    "bpm": 140,
+    "loopStart": 1,
+    "loopEnd": 110.714286
+  },
+  "proximo": {
+    "titulo": "SHIFT: The Nightmare Isn't Over",
+    "fecha": "2026-11-01",
+    "horario": "12:00–00:00",
+    "venue": "EDEN NYC",
+    "ra": "https://ra.co/events/2555321",
+    "headliners": [
+      "Developer",
+      "Orlando Voorn",
+      "DJ Plant Texture"
+    ]
+  },
+  "promotor_ra": "https://ra.co/promoters/101532",
+  "eventos": [
+    {
+      "id": "2568145",
+      "fecha": "2026-12-26",
+      "titulo": "WINTER RESONANCE ||||",
+      "venue": "TBA",
+      "headliners": [],
+      "ra": "https://ra.co/events/2568145",
+      "tiers": []
+    },
+    {
+      "id": "2555321",
+      "fecha": "2026-11-01",
+      "titulo": "SHIFT: The Nightmare Isn't Over",
+      "venue": "EDEN NYC",
+      "headliners": [
+        "Developer",
+        "Orlando Voorn",
+        "DJ Plant Texture"
+      ],
+      "ra": "https://ra.co/events/2555321",
+      "tiers": [
+        {
+          "titulo": "1st release",
+          "precio": 28.55,
+          "desde": "2026-10-07T10:00:00.000Z",
+          "hasta": "2026-10-31T04:00:00.000Z"
+        },
+        {
+          "titulo": "2nd release",
+          "precio": 40,
+          "desde": "2026-10-07T10:00:00.000Z",
+          "hasta": "2026-11-02T05:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "2417040",
+      "fecha": "2026-07-17",
+      "titulo": "NEXUS 005 - The Finale",
+      "venue": "BABY01",
+      "headliners": [
+        "Aero",
+        "Cailín",
+        "Chaz Moloney"
+      ],
+      "ra": "https://ra.co/events/2417040"
+    },
+    {
+      "id": "2459973",
+      "fecha": "2026-07-12",
+      "titulo": "FREEDOM NYC X SHIFT TAKE OVER",
+      "venue": "Eden NYC",
+      "headliners": [
+        "Joey Beltram",
+        "Antenes",
+        "Ambivalent"
+      ],
+      "ra": "https://ra.co/events/2459973"
+    },
+    {
+      "id": "2433061",
+      "fecha": "2026-06-20",
+      "titulo": "ÂTΞMPORAL",
+      "venue": "Secret location",
+      "headliners": [
+        "Paul Ritch",
+        "Umfang",
+        "Olivia Mendez"
+      ],
+      "ra": "https://ra.co/events/2433061"
+    },
+    {
+      "id": "2353409",
+      "fecha": "2026-05-23",
+      "titulo": "SOLACE & SHIFT - SUMMER OPENER",
+      "venue": "Honey's",
+      "headliners": [
+        "Julia Govor",
+        "SHYDA",
+        "VEZ."
+      ],
+      "ra": "https://ra.co/events/2353409"
+    },
+    {
+      "id": "2423961",
+      "fecha": "2026-05-03",
+      "titulo": "CRUD0 x SHIFT joint forces for a free open air session featuring",
+      "venue": "Secret location",
+      "headliners": [],
+      "ra": "https://ra.co/events/2423961"
+    },
+    {
+      "id": "2416458",
+      "fecha": "2026-04-25",
+      "titulo": "NO NAME: Trust The Signal",
+      "venue": "Secret location",
+      "headliners": [
+        "Border One"
+      ],
+      "ra": "https://ra.co/events/2416458"
+    },
+    {
+      "id": "2406692",
+      "fecha": "2026-04-19",
+      "titulo": "SHIFT × CRUD0 Open Air",
+      "venue": "Under the Kosciuszko Bridge, Queens",
+      "headliners": [
+        "Frazi.er",
+        "MASCHA",
+        "Junkfile"
+      ],
+      "ra": "https://ra.co/events/2406692"
+    },
+    {
+      "id": "2304935",
+      "fecha": "2025-12-27",
+      "titulo": "Winter Resonance III: Lewis Fautzi, Temudo, Elle Dee & More",
+      "venue": "H0L0",
+      "headliners": [
+        "Lewis Fautzi",
+        "Temudo",
+        "Elle Dee"
+      ],
+      "ra": "https://ra.co/events/2304935"
+    },
+    {
+      "id": "2318527",
+      "fecha": "2025-12-20",
+      "titulo": "HDC & Shift NYC",
+      "venue": "Secret location",
+      "headliners": [
+        "dDre",
+        "JADE CAO",
+        "Marteka Fair"
+      ],
+      "ra": "https://ra.co/events/2318527"
+    },
+    {
+      "id": "2229355",
+      "fecha": "2025-11-28",
+      "titulo": "Circuit Structure Records 3rd Birthday X Shift New York",
+      "venue": "Lark",
+      "headliners": [
+        "Offtrack",
+        "Meda-Ava",
+        "Stephanie Sykes"
+      ],
+      "ra": "https://ra.co/events/2229355"
+    },
+    {
+      "id": "2153312",
+      "fecha": "2025-08-08",
+      "titulo": "Renate Klubnacht w Oliver Deutschmann, DJ Zurückbleiben Bitte, Manus, androosh, aem.aze, LECAT",
+      "venue": "Renate",
+      "headliners": [
+        "DJ Frequency",
+        "Paul Munz",
+        "aem.aze"
+      ],
+      "ra": "https://ra.co/events/2153312"
+    },
+    {
+      "id": "2176939",
+      "fecha": "2025-07-19",
+      "titulo": "FUTURHYTHM: Paul Ritch / Border One / Hertz Collision + More TBA",
+      "venue": "Secret location",
+      "headliners": [
+        "Paul Ritch",
+        "Border One",
+        "Hertz Collision"
+      ],
+      "ra": "https://ra.co/events/2176939"
+    },
+    {
+      "id": "2189180",
+      "fecha": "2025-06-27",
+      "titulo": "GENETRIX: Developer / Anthony Parasole",
+      "venue": "Secret location",
+      "headliners": [
+        "Developer",
+        "Anthony Parasole"
+      ],
+      "ra": "https://ra.co/events/2189180"
+    },
+    {
+      "id": "2129573",
+      "fecha": "2025-04-27",
+      "titulo": "CRUD0 x SHIFT PRESENTS: Cleric",
+      "venue": "The Meadow",
+      "headliners": [
+        "Cleric",
+        "Awazaki",
+        "Rupert Wall"
+      ],
+      "ra": "https://ra.co/events/2129573"
+    },
+    {
+      "id": "2141132",
+      "fecha": "2025-04-14",
+      "titulo": "Nova Noir",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [
+        "Ramsey Neville",
+        "Michelle Kay"
+      ],
+      "ra": "https://ra.co/events/2141132"
+    },
+    {
+      "id": "2123408",
+      "fecha": "2025-04-13",
+      "titulo": "NEXUS 003",
+      "venue": "The Chocolate Factory",
+      "headliners": [
+        "AOIFE",
+        "CSILLA",
+        "Hooligan"
+      ],
+      "ra": "https://ra.co/events/2123408"
+    },
+    {
+      "id": "2104595",
+      "fecha": "2025-02-24",
+      "titulo": "SHIFT INVITES TO NOVA NOIR",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [
+        "PS11",
+        "N1NA",
+        "MEDINA"
+      ],
+      "ra": "https://ra.co/events/2104595"
+    },
+    {
+      "id": "2079859",
+      "fecha": "2025-01-27",
+      "titulo": "NOVA NOIR",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [
+        "Devoye"
+      ],
+      "ra": "https://ra.co/events/2079859"
+    },
+    {
+      "id": "2041681",
+      "fecha": "2024-12-28",
+      "titulo": "SHIFT x IMPULSE CØNTROL: Winter Resonance Vol. 2",
+      "venue": "96 Morgan Ave",
+      "headliners": [
+        "Truncate",
+        "Centrific",
+        "Ramsey Neville"
+      ],
+      "ra": "https://ra.co/events/2041681"
+    },
+    {
+      "id": "2041304",
+      "fecha": "2024-12-07",
+      "titulo": "{b}: Feenicks b2b Jesse, KXAH, Lady Tazz, Spencer Zabiela b2b Ant LaRock",
+      "venue": "96 Morgan Ave",
+      "headliners": [
+        "Feenicks",
+        "KXAH",
+        "Lady Tazz"
+      ],
+      "ra": "https://ra.co/events/2041304"
+    },
+    {
+      "id": "1991493",
+      "fecha": "2024-09-21",
+      "titulo": "FUTURE RHYTHM",
+      "venue": "315 Stagg st",
+      "headliners": [
+        "Exos",
+        "Barbosa",
+        "Alejandro Franco"
+      ],
+      "ra": "https://ra.co/events/1991493"
+    },
+    {
+      "id": "1974478",
+      "fecha": "2024-09-06",
+      "titulo": "TECHNO ORIGINS Vol. 1: The Advent & Joey Beltram",
+      "venue": "315 Stagg st",
+      "headliners": [
+        "The Advent",
+        "Joey Beltram",
+        "Salty DJ"
+      ],
+      "ra": "https://ra.co/events/1974478"
+    },
+    {
+      "id": "1956707",
+      "fecha": "2024-07-15",
+      "titulo": "Nova Noir",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [
+        "NUJIART",
+        "Âsan"
+      ],
+      "ra": "https://ra.co/events/1956707"
+    },
+    {
+      "id": "1949376",
+      "fecha": "2024-07-07",
+      "titulo": "BLASTOFF",
+      "venue": "315 Stagg st",
+      "headliners": [
+        "D-Leria",
+        "P.E.A.R.L.",
+        "Unbekannt"
+      ],
+      "ra": "https://ra.co/events/1949376"
+    },
+    {
+      "id": "1909580",
+      "fecha": "2024-06-08",
+      "titulo": "Marco Bailey + Julia Govor",
+      "venue": "315 Stagg st",
+      "headliners": [
+        "Marco Bailey",
+        "Julia Govor",
+        "BRALLE"
+      ],
+      "ra": "https://ra.co/events/1909580"
+    },
+    {
+      "id": "1875749",
+      "fecha": "2024-05-31",
+      "titulo": "BLVCK DANCE 2nd EDITION",
+      "venue": "Secret location",
+      "headliners": [
+        "Metaraph",
+        "7CIRCLE",
+        "Tensal"
+      ],
+      "ra": "https://ra.co/events/1875749"
+    },
+    {
+      "id": "1909915",
+      "fecha": "2024-04-28",
+      "titulo": "GETAWAY // DAYTIME RAVE",
+      "venue": "Secret location",
+      "headliners": [
+        "JOSELO",
+        "PS/ELEVEN",
+        "Andrea Arias"
+      ],
+      "ra": "https://ra.co/events/1909915"
+    },
+    {
+      "id": "1894545",
+      "fecha": "2024-04-07",
+      "titulo": "GETAWAY",
+      "venue": "1308 Myrtle Av",
+      "headliners": [
+        "Umfang",
+        "Concrete Husband"
+      ],
+      "ra": "https://ra.co/events/1894545"
+    },
+    {
+      "id": "1868688",
+      "fecha": "2024-03-22",
+      "titulo": "SHIFT X CONSERVATORY PRESENT: OVERTURE",
+      "venue": "Secret location",
+      "headliners": [
+        "Hitam",
+        "WINDFUHR",
+        "Montero"
+      ],
+      "ra": "https://ra.co/events/1868688"
+    },
+    {
+      "id": "1882949",
+      "fecha": "2024-03-16",
+      "titulo": "GETAWAY",
+      "venue": "Secret location",
+      "headliners": [
+        "Dj ANGELDU$t",
+        "Purdy",
+        "CRYFXB"
+      ],
+      "ra": "https://ra.co/events/1882949"
+    },
+    {
+      "id": "1855608",
+      "fecha": "2024-02-24",
+      "titulo": "SHIFT X CONSERVATORY X NXT PRESENT: IGNITE",
+      "venue": "Secret location",
+      "headliners": [
+        "Asharpmusic"
+      ],
+      "ra": "https://ra.co/events/1855608"
+    },
+    {
+      "id": "1838078",
+      "fecha": "2024-01-29",
+      "titulo": "NOVA NOIR",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [
+        "FadeFace"
+      ],
+      "ra": "https://ra.co/events/1838078"
+    },
+    {
+      "id": "1848863",
+      "fecha": "2024-01-28",
+      "titulo": "GETAWAY",
+      "venue": "Secret location",
+      "headliners": [
+        "Concrete Husband"
+      ],
+      "ra": "https://ra.co/events/1848863"
+    },
+    {
+      "id": "1836864",
+      "fecha": "2024-01-20",
+      "titulo": "Sensorial with Infra x Shift x Conservatory",
+      "venue": "315 Stagg st",
+      "headliners": [
+        "ORBE",
+        "Xoce",
+        "CSILLA"
+      ],
+      "ra": "https://ra.co/events/1836864"
+    },
+    {
+      "id": "1835451",
+      "fecha": "2024-01-13",
+      "titulo": "TRIM X Shift NYC",
+      "venue": "Telephone",
+      "headliners": [
+        "Purdy",
+        "CRYFXB",
+        "Concrete Husband"
+      ],
+      "ra": "https://ra.co/events/1835451"
+    },
+    {
+      "id": "1826563",
+      "fecha": "2023-12-29",
+      "titulo": "SHIFT: Lindsey Herbert Decoder jay york Åre:gone Secret Raver Adrian Hex PS11 A#",
+      "venue": "Secret location",
+      "headliners": [
+        "Lindsey Herbert",
+        "Decoder",
+        "Åre:gone"
+      ],
+      "ra": "https://ra.co/events/1826563"
+    },
+    {
+      "id": "1823878",
+      "fecha": "2023-12-23",
+      "titulo": "Patrick Russell & AL3XANDRIA in Brooklyn",
+      "venue": "Secret location",
+      "headliners": [
+        "Patrick Russell",
+        "AL3XANDRIA",
+        "Annie Lew"
+      ],
+      "ra": "https://ra.co/events/1823878"
+    },
+    {
+      "id": "1812736",
+      "fecha": "2023-12-02",
+      "titulo": "FUTURISM",
+      "venue": "The Subway Station",
+      "headliners": [
+        "Eduardo de la Calle",
+        "Aöcram",
+        "Asharpmusic"
+      ],
+      "ra": "https://ra.co/events/1812736"
+    },
+    {
+      "id": "1815026",
+      "fecha": "2023-11-27",
+      "titulo": "NOVA NOIR",
+      "venue": "Bossa Nova Civic Club",
+      "headliners": [],
+      "ra": "https://ra.co/events/1815026"
+    },
+    {
+      "id": "1810235",
+      "fecha": "2023-11-18",
+      "titulo": "After Hours",
+      "venue": "ZION",
+      "headliners": [
+        "DAIYAH",
+        "Kevin Matto"
+      ],
+      "ra": "https://ra.co/events/1810235"
+    },
+    {
+      "id": "1808603",
+      "fecha": "2023-11-17",
+      "titulo": "FUNKY MY GROOVY",
+      "venue": "Secret location",
+      "headliners": [
+        "DAIYAH",
+        "Kevin Matto",
+        "Georgi Naumov"
+      ],
+      "ra": "https://ra.co/events/1808603"
+    },
+    {
+      "id": "1802816",
+      "fecha": "2023-11-04",
+      "titulo": "UNDERBRIDGE",
+      "venue": "Secret location",
+      "headliners": [
+        "Unbekannt",
+        "Juan Evangelista",
+        "An Chen"
+      ],
+      "ra": "https://ra.co/events/1802816"
+    },
+    {
+      "id": "1795007",
+      "fecha": "2023-10-22",
+      "titulo": "GATEWAY AFTER HOURS",
+      "venue": "Dashi Brooklyn",
+      "headliners": [
+        "PLEASURES",
+        "N1NA",
+        "Mos"
+      ],
+      "ra": "https://ra.co/events/1795007"
+    },
+    {
+      "id": "1791042",
+      "fecha": "2023-10-15",
+      "titulo": "Symmetry",
+      "venue": "Symmetry",
+      "headliners": [
+        "Georgi Naumov",
+        "Radar",
+        "Ronaldo"
+      ],
+      "ra": "https://ra.co/events/1791042"
+    },
+    {
+      "id": "1782313",
+      "fecha": "2023-10-13",
+      "titulo": "Funky My Groove",
+      "venue": "ZION",
+      "headliners": [
+        "PS/ELEVEN",
+        "Radar",
+        "TeddyRx"
+      ],
+      "ra": "https://ra.co/events/1782313"
+    },
+    {
+      "id": "1783650",
+      "fecha": "2023-10-01",
+      "titulo": "Symmetry",
+      "venue": "Symmetry",
+      "headliners": [
+        "CSILLA",
+        "Toranzie",
+        "CRYFXB"
+      ],
+      "ra": "https://ra.co/events/1783650"
+    },
+    {
+      "id": "1778877",
+      "fecha": "2023-09-24",
+      "titulo": "Home Bass",
+      "venue": "Symmetry",
+      "headliners": [
+        "FadeFace",
+        "Georgi Naumov",
+        "Lukas Valo"
+      ],
+      "ra": "https://ra.co/events/1778877"
+    },
+    {
+      "id": "1760709",
+      "fecha": "2023-09-09",
+      "titulo": "MIND FLEXURE",
+      "venue": "ZION",
+      "headliners": [
+        "Lady Tazz",
+        "Dj ANGELDU$t",
+        "Radar"
+      ],
+      "ra": "https://ra.co/events/1760709"
+    },
+    {
+      "id": "1756253",
+      "fecha": "2023-08-20",
+      "titulo": "UNDERBRIDGE",
+      "venue": "Right Next to The Restaurant Depot 43-40 57th Av Mapeth, NY 11378, Under Kosciuszko Bridge",
+      "headliners": [
+        "Ronaldo",
+        "Virus",
+        "EMP"
+      ],
+      "ra": "https://ra.co/events/1756253"
+    },
+    {
+      "id": "1835569",
+      "fecha": "2023-08-18",
+      "titulo": "ANACRUSA",
+      "venue": "Sense Studio",
+      "headliners": [],
+      "ra": "https://ra.co/events/1835569"
+    },
+    {
+      "id": "1747563",
+      "fecha": "2023-08-04",
+      "titulo": "FUNKY MY GROOVE",
+      "venue": "ZION",
+      "headliners": [
+        "FadeFace",
+        "Georgi Naumov",
+        "Virus"
+      ],
+      "ra": "https://ra.co/events/1747563"
+    },
+    {
+      "id": "1741010",
+      "fecha": "2023-07-23",
+      "titulo": "INDEPENDANCE TECHNO",
+      "venue": "Right Next to The Restaurant Depot Under Kosciuszko Bridge",
+      "headliners": [
+        "Purdy",
+        "CATA",
+        "Kamal errorr"
+      ],
+      "ra": "https://ra.co/events/1741010"
+    },
+    {
+      "id": "1727003",
+      "fecha": "2023-07-08",
+      "titulo": "Lindsey Herbert, Secret Raver, Adrian Hex, Giovani & Mothrat",
+      "venue": "ZION",
+      "headliners": [
+        "Lindsey Herbert"
+      ],
+      "ra": "https://ra.co/events/1727003"
+    },
+    {
+      "id": "1695775",
+      "fecha": "2023-04-29",
+      "titulo": "RAVE STREET",
+      "venue": "Under Kosciuzko Bridge",
+      "headliners": [
+        "bw",
+        "Xoce",
+        "TeddyRx"
+      ],
+      "ra": "https://ra.co/events/1695775"
+    },
+    {
+      "id": "1688941",
+      "fecha": "2023-04-22",
+      "titulo": "Shift presents Binaural Code / Aocram",
+      "venue": "Casa Maya",
+      "headliners": [
+        "Aöcram"
+      ],
+      "ra": "https://ra.co/events/1688941"
+    },
+    {
+      "id": "1661125",
+      "fecha": "2023-03-18",
+      "titulo": "Joton",
+      "venue": "ZION",
+      "headliners": [
+        "Joton",
+        "A.M.D.",
+        "Auspex"
+      ],
+      "ra": "https://ra.co/events/1661125"
+    },
+    {
+      "id": "1601335",
+      "fecha": "2022-12-03",
+      "titulo": "Mark Broom in Brooklyn '100% juice Album Tour'",
+      "venue": "The Meadow",
+      "headliners": [
+        "Mark Broom",
+        "Jumex",
+        "A.Arias"
+      ],
+      "ra": "https://ra.co/events/1601335"
+    },
+    {
+      "id": "1570044",
+      "fecha": "2022-08-27",
+      "titulo": "Alex Bau in Brooklyn",
+      "venue": "Secret location",
+      "headliners": [
+        "Alex Bau",
+        "David Velez"
+      ],
+      "ra": "https://ra.co/events/1570044"
+    },
+    {
+      "id": "1555829",
+      "fecha": "2022-08-05",
+      "titulo": "The Advent Returning to NY",
+      "venue": "Secret location",
+      "headliners": [
+        "The Advent",
+        "David Velez",
+        "Pjay"
+      ],
+      "ra": "https://ra.co/events/1555829"
+    },
+    {
+      "id": "1519305",
+      "fecha": "2022-04-23",
+      "titulo": "Temudo + Tensal and many more",
+      "venue": "Secret location",
+      "headliners": [
+        "Tensal",
+        "Temudo",
+        "Holden Federico"
+      ],
+      "ra": "https://ra.co/events/1519305"
+    },
+    {
+      "id": "1514162",
+      "fecha": "2022-04-09",
+      "titulo": "Modular live sessions NY",
+      "venue": "Secret location",
+      "headliners": [
+        "Klauss",
+        "Pjay",
+        "TonyDeepDisco"
+      ],
+      "ra": "https://ra.co/events/1514162"
+    },
+    {
+      "id": "1505935",
+      "fecha": "2022-03-19",
+      "titulo": "Shift",
+      "venue": "Secret location",
+      "headliners": [
+        "Ambivalent",
+        "138"
+      ],
+      "ra": "https://ra.co/events/1505935"
+    },
+    {
+      "id": "1457559",
+      "fecha": "2021-08-21",
+      "titulo": "Rave Resistence",
+      "venue": "Outdoors Brooklyn",
+      "headliners": [
+        "Lukas Valo"
+      ],
+      "ra": "https://ra.co/events/1457559"
+    }
+  ]
+}
