@@ -1,23 +1,22 @@
 {
-  "generado": "2026-10-28",
+  "generado": "2026-11-03",
   "artistas": [
     {
       "slug": "secret-raver",
       "nombre": "Secret Raver",
       "ra": "https://ra.co/dj/secretraver",
       "raId": "107344",
-      "copy": "Secret Raver founded SHIFT and is on more of its bills than anyone: 45 nights with SHIFT since March 2023, from ZION to Eden. Brooklyn-based. Deep, hypnotic, built on texture and timing. The sound the series is measured against.",
+      "copy": "Secret Raver founded SHIFT and is on more of its bills than anyone: 46 nights with SHIFT since March 2023, from ZION to Eden. Brooklyn-based. Deep, hypnotic, built on texture and timing. The sound the series is measured against.",
       "eventos_totales": 46,
-      "proximos": [
+      "proximos": [],
+      "pasados": [
         {
           "id": "2555321",
           "fecha": "2026-11-01",
           "titulo": "SHIFT: The Nightmare Isn't Over",
           "venue": "EDEN NYC",
           "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": [
+        },
         {
           "id": "2459973",
           "fecha": "2026-07-12",
@@ -340,18 +339,17 @@
       "nombre": "Adrian Hex",
       "ra": "https://ra.co/dj/adrianhex",
       "raId": "121190",
-      "copy": "35 nights with SHIFT since April 2023, second only to Secret Raver. Less is more: minimal with bounce, eroded synth textures, a groove that keeps moving under the floor. Part of how this series sounds.",
+      "copy": "36 nights with SHIFT since April 2023, second only to Secret Raver. Less is more: minimal with bounce, eroded synth textures, a groove that keeps moving under the floor. Part of how this series sounds.",
       "eventos_totales": 36,
-      "proximos": [
+      "proximos": [],
+      "pasados": [
         {
           "id": "2555321",
           "fecha": "2026-11-01",
           "titulo": "SHIFT: The Nightmare Isn't Over",
           "venue": "EDEN NYC",
           "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": [
+        },
         {
           "id": "2417040",
           "fecha": "2026-07-17",
@@ -604,18 +602,17 @@
       "nombre": "Giovani",
       "ra": "https://ra.co/dj/giovani",
       "raId": "13434",
-      "copy": "With Trilogy NYC. First residency at Subroyal in Bogotá, later on the Bogotraxx Festival bill. 13 nights with SHIFT since April 2022, from the modular live sessions to FUTURE RHYTHM.",
+      "copy": "With Trilogy NYC. First residency at Subroyal in Bogotá, later on the Bogotraxx Festival bill. 14 nights with SHIFT since April 2022, from the modular live sessions to FUTURE RHYTHM.",
       "eventos_totales": 14,
-      "proximos": [
+      "proximos": [],
+      "pasados": [
         {
           "id": "2555321",
           "fecha": "2026-11-01",
           "titulo": "SHIFT: The Nightmare Isn't Over",
           "venue": "EDEN NYC",
           "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": [
+        },
         {
           "id": "1991493",
           "fecha": "2024-09-21",
@@ -714,18 +711,17 @@
       "nombre": "STE-VÍ",
       "ra": "https://ra.co/dj/ste-ví",
       "raId": "118049",
-      "copy": "From Ireland to New York, a vinyl selector for hypnotic, driving techno. Behind Solace NY and the SOLACE & SHIFT Summer Opener. 11 nights with SHIFT since April 2023.",
+      "copy": "From Ireland to New York, a vinyl selector for hypnotic, driving techno. Behind Solace NY and the SOLACE & SHIFT Summer Opener. 12 nights with SHIFT since April 2023.",
       "eventos_totales": 12,
-      "proximos": [
+      "proximos": [],
+      "pasados": [
         {
           "id": "2555321",
           "fecha": "2026-11-01",
           "titulo": "SHIFT: The Nightmare Isn't Over",
           "venue": "EDEN NYC",
           "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": [
+        },
         {
           "id": "2433061",
           "fecha": "2026-06-20",
@@ -936,6 +932,59 @@
       ]
     },
     {
+      "slug": "fadeface",
+      "nombre": "FadeFace",
+      "ra": "https://ra.co/dj/fadeface",
+      "raId": "71308",
+      "copy": "DJ, producer and live performer, founder of Lemos. 6 nights with SHIFT since August 2023, from FUNKY MY GROOVE to the Freedom NYC takeover in July 2026.",
+      "eventos_totales": 6,
+      "proximos": [],
+      "pasados": [
+        {
+          "id": "2555321",
+          "fecha": "2026-11-01",
+          "titulo": "SHIFT: The Nightmare Isn't Over",
+          "venue": "EDEN NYC",
+          "ra": "https://ra.co/events/2555321"
+        },
+        {
+          "id": "2459973",
+          "fecha": "2026-07-12",
+          "titulo": "FREEDOM NYC X SHIFT TAKE OVER",
+          "venue": "Eden NYC",
+          "ra": "https://ra.co/events/2459973"
+        },
+        {
+          "id": "1868688",
+          "fecha": "2024-03-22",
+          "titulo": "SHIFT X CONSERVATORY PRESENT: OVERTURE",
+          "venue": "Secret location",
+          "ra": "https://ra.co/events/1868688"
+        },
+        {
+          "id": "1838078",
+          "fecha": "2024-01-29",
+          "titulo": "NOVA NOIR",
+          "venue": "Bossa Nova Civic Club",
+          "ra": "https://ra.co/events/1838078"
+        },
+        {
+          "id": "1778877",
+          "fecha": "2023-09-24",
+          "titulo": "Home Bass",
+          "venue": "Symmetry",
+          "ra": "https://ra.co/events/1778877"
+        },
+        {
+          "id": "1747563",
+          "fecha": "2023-08-04",
+          "titulo": "FUNKY MY GROOVE",
+          "venue": "ZION",
+          "ra": "https://ra.co/events/1747563"
+        }
+      ]
+    },
+    {
       "slug": "csilla",
       "nombre": "CSILLA",
       "ra": "https://ra.co/dj/csilla",
@@ -1038,60 +1087,6 @@
           "titulo": "GATEWAY AFTER HOURS",
           "venue": "Dashi Brooklyn",
           "ra": "https://ra.co/events/1795007"
-        }
-      ]
-    },
-    {
-      "slug": "fadeface",
-      "nombre": "FadeFace",
-      "ra": "https://ra.co/dj/fadeface",
-      "raId": "71308",
-      "copy": "DJ, producer and live performer, founder of Lemos. 5 nights with SHIFT since August 2023, from FUNKY MY GROOVE to the Freedom NYC takeover in July 2026.",
-      "eventos_totales": 6,
-      "proximos": [
-        {
-          "id": "2555321",
-          "fecha": "2026-11-01",
-          "titulo": "SHIFT: The Nightmare Isn't Over",
-          "venue": "EDEN NYC",
-          "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": [
-        {
-          "id": "2459973",
-          "fecha": "2026-07-12",
-          "titulo": "FREEDOM NYC X SHIFT TAKE OVER",
-          "venue": "Eden NYC",
-          "ra": "https://ra.co/events/2459973"
-        },
-        {
-          "id": "1868688",
-          "fecha": "2024-03-22",
-          "titulo": "SHIFT X CONSERVATORY PRESENT: OVERTURE",
-          "venue": "Secret location",
-          "ra": "https://ra.co/events/1868688"
-        },
-        {
-          "id": "1838078",
-          "fecha": "2024-01-29",
-          "titulo": "NOVA NOIR",
-          "venue": "Bossa Nova Civic Club",
-          "ra": "https://ra.co/events/1838078"
-        },
-        {
-          "id": "1778877",
-          "fecha": "2023-09-24",
-          "titulo": "Home Bass",
-          "venue": "Symmetry",
-          "ra": "https://ra.co/events/1778877"
-        },
-        {
-          "id": "1747563",
-          "fecha": "2023-08-04",
-          "titulo": "FUNKY MY GROOVE",
-          "venue": "ZION",
-          "ra": "https://ra.co/events/1747563"
         }
       ]
     },
@@ -1614,6 +1609,31 @@
       ]
     },
     {
+      "slug": "developer",
+      "nombre": "Developer",
+      "ra": "https://ra.co/dj/developer",
+      "raId": "1835",
+      "copy": "Developer runs Modularz and has records on Axis and Mote-Evolver. A Los Angeles DJ who came up on radio, built for long sets on three decks. First with SHIFT at GENETRIX in 2025, back for The Nightmare Isn't Over.",
+      "eventos_totales": 2,
+      "proximos": [],
+      "pasados": [
+        {
+          "id": "2555321",
+          "fecha": "2026-11-01",
+          "titulo": "SHIFT: The Nightmare Isn't Over",
+          "venue": "EDEN NYC",
+          "ra": "https://ra.co/events/2555321"
+        },
+        {
+          "id": "2189180",
+          "fecha": "2025-06-27",
+          "titulo": "GENETRIX: Developer / Anthony Parasole",
+          "venue": "Secret location",
+          "ra": "https://ra.co/events/2189180"
+        }
+      ]
+    },
+    {
       "slug": "joey-beltram",
       "nombre": "Joey Beltram",
       "ra": "https://ra.co/dj/joeybeltram",
@@ -1789,13 +1809,14 @@
       ]
     },
     {
-      "slug": "developer",
-      "nombre": "Developer",
-      "ra": "https://ra.co/dj/developer",
-      "raId": "1835",
-      "copy": "Developer runs Modularz and has records on Axis and Mote-Evolver. A Los Angeles DJ who came up on radio, built for long sets on three decks. First with SHIFT at GENETRIX in 2025, back for The Nightmare Isn't Over.",
-      "eventos_totales": 2,
-      "proximos": [
+      "slug": "dj-plant-texture",
+      "nombre": "DJ Plant Texture",
+      "ra": "https://ra.co/dj/djplanttexture",
+      "raId": "68326",
+      "copy": "Out of Bari, with records on Ilian Tape, Tresor and Crème Organization. Breaks, jungle, acid, footwork and techno built around an MPC, played as a jam. First SHIFT date: The Nightmare Isn't Over, live.",
+      "eventos_totales": 1,
+      "proximos": [],
+      "pasados": [
         {
           "id": "2555321",
           "fecha": "2026-11-01",
@@ -1803,14 +1824,23 @@
           "venue": "EDEN NYC",
           "ra": "https://ra.co/events/2555321"
         }
-      ],
+      ]
+    },
+    {
+      "slug": "orlando-voorn",
+      "nombre": "Orlando Voorn",
+      "ra": "https://ra.co/dj/orlandovoorn",
+      "raId": "4806",
+      "copy": "The Amsterdam to Detroit line in one name: Game One with Juan Atkins on Metroplex, records on KMS and on Fragile, a shelf of aliases and self-run labels. Dutch DMC champion in 1986 and 1987. First SHIFT date: The Nightmare Isn't Over.",
+      "eventos_totales": 1,
+      "proximos": [],
       "pasados": [
         {
-          "id": "2189180",
-          "fecha": "2025-06-27",
-          "titulo": "GENETRIX: Developer / Anthony Parasole",
-          "venue": "Secret location",
-          "ra": "https://ra.co/events/2189180"
+          "id": "2555321",
+          "fecha": "2026-11-01",
+          "titulo": "SHIFT: The Nightmare Isn't Over",
+          "venue": "EDEN NYC",
+          "ra": "https://ra.co/events/2555321"
         }
       ]
     },
@@ -2011,42 +2041,6 @@
           "ra": "https://ra.co/events/1570044"
         }
       ]
-    },
-    {
-      "slug": "dj-plant-texture",
-      "nombre": "DJ Plant Texture",
-      "ra": "https://ra.co/dj/djplanttexture",
-      "raId": "68326",
-      "copy": "Out of Bari, with records on Ilian Tape, Tresor and Crème Organization. Breaks, jungle, acid, footwork and techno built around an MPC, played as a jam. First SHIFT date: The Nightmare Isn't Over, live.",
-      "eventos_totales": 1,
-      "proximos": [
-        {
-          "id": "2555321",
-          "fecha": "2026-11-01",
-          "titulo": "SHIFT: The Nightmare Isn't Over",
-          "venue": "EDEN NYC",
-          "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": []
-    },
-    {
-      "slug": "orlando-voorn",
-      "nombre": "Orlando Voorn",
-      "ra": "https://ra.co/dj/orlandovoorn",
-      "raId": "4806",
-      "copy": "The Amsterdam to Detroit line in one name: Game One with Juan Atkins on Metroplex, records on KMS and on Fragile, a shelf of aliases and self-run labels. Dutch DMC champion in 1986 and 1987. First SHIFT date: The Nightmare Isn't Over.",
-      "eventos_totales": 1,
-      "proximos": [
-        {
-          "id": "2555321",
-          "fecha": "2026-11-01",
-          "titulo": "SHIFT: The Nightmare Isn't Over",
-          "venue": "EDEN NYC",
-          "ra": "https://ra.co/events/2555321"
-        }
-      ],
-      "pasados": []
     }
   ]
 }

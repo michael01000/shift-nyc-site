@@ -7,16 +7,17 @@
     "loopEnd": 110.714286
   },
   "proximo": {
-    "titulo": "SHIFT: The Nightmare Isn't Over",
-    "fecha": "2026-11-01",
-    "horario": "12:00–00:00",
-    "venue": "EDEN NYC",
-    "ra": "https://ra.co/events/2555321",
-    "headliners": [
-      "Developer",
-      "Orlando Voorn",
-      "DJ Plant Texture"
-    ]
+    "id": "2568145",
+    "titulo": "WINTER RESONANCE ||||",
+    "fecha": "2026-12-26",
+    "horario": "22:00–10:00",
+    "venue": "Secret location, Brooklyn",
+    "ra": "https://ra.co/events/2568145",
+    "estado": "early-access"
+  },
+  "comunidad": {
+    "lista": "2,500+",
+    "fuente": "Brevo, email 4 entregados 2.537, 1/11/2026"
   },
   "promotor_ra": "https://ra.co/promoters/101532",
   "eventos": [
@@ -39,21 +40,7 @@
         "Orlando Voorn",
         "DJ Plant Texture"
       ],
-      "ra": "https://ra.co/events/2555321",
-      "tiers": [
-        {
-          "titulo": "1st release",
-          "precio": 28.55,
-          "desde": "2026-10-07T10:00:00.000Z",
-          "hasta": "2026-10-31T04:00:00.000Z"
-        },
-        {
-          "titulo": "2nd release",
-          "precio": 40,
-          "desde": "2026-10-07T10:00:00.000Z",
-          "hasta": "2026-11-02T05:00:00.000Z"
-        }
-      ]
+      "ra": "https://ra.co/events/2555321"
     },
     {
       "id": "2417040",
