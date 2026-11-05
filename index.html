@@ -1269,7 +1269,7 @@
             <label class="ic-checkbox-label">
               <input type="checkbox" id="ic-sms-optin" name="SMS_OPTIN" value="1" class="ic-checkbox">
               <span class="ic-checkbox-box"></span>
-              <span class="ic-checkbox-text">Text me SHIFT NYC dates and ticket links. Recurring automated marketing text messages (SMS) to the number above. Consent is not a condition of purchase. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Your mobile information will not be sold or shared with third parties. Questions: <a href="mailto:info@shift-nyc.com" class="ic-link">info@shift-nyc.com</a>. <a href="/privacy.html" class="ic-link" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms.html" class="ic-link" target="_blank" rel="noopener">Terms</a>.</span>
+              <span class="ic-checkbox-text">By checking this box and submitting this form, you consent to receive marketing text messages from SHIFT NYC. Reply STOP to opt out. Reply HELP for help. Message and data rates may apply. Message frequency may vary.</span>
             </label>
           </div>
 
@@ -1283,8 +1283,17 @@
             <div class="ic-error" id="err-optin" aria-live="polite"></div>
           </div>
 
-          <!-- Fila 6: Error general + Submit + Legal -->
-          <div class="ic-row ic-row-submit" data-row="6">
+          <!-- Fila 6: Casilla Términos y Privacidad -->
+          <div class="ic-row ic-row-check" data-row="6">
+            <label class="ic-checkbox-label">
+              <input type="checkbox" id="ic-terms" name="TERMS_OK" value="1" class="ic-checkbox">
+              <span class="ic-checkbox-box"></span>
+              <span class="ic-checkbox-text">I agree to the Terms and Conditions (<a href="/terms.html" class="ic-link" target="_blank" rel="noopener">https://shift-nyc.com/terms.html</a>) and Privacy Policy (<a href="/privacy.html" class="ic-link" target="_blank" rel="noopener">https://shift-nyc.com/privacy.html</a>).</span>
+            </label>
+          </div>
+
+          <!-- Fila 7: Error general + Submit + Legal -->
+          <div class="ic-row ic-row-submit" data-row="7">
             <div class="ic-general-error" id="err-general" aria-live="polite"></div>
             <button type="submit" id="btn-ic-submit" class="ic-submit-btn">JOIN ⇧</button>
             <p class="ic-legal-notice">SHIFT NYC is operated by John Helmer Moncada (DBA SHIFT NYC). Texts: reply STOP to opt out, HELP for help. Questions: <a href="mailto:info@shift-nyc.com" class="ic-link">info@shift-nyc.com</a>. <a href="/privacy.html" class="ic-link" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms.html" class="ic-link" target="_blank" rel="noopener">Terms</a>.</p>
