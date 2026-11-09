@@ -1,0 +1,13 @@
+{
+  "evento": "2568145",
+  "kicker": "THE FOURTH WINTER",
+  "desc": "Saturday, December 26. Twelve hours. The location goes to ticket holders.",
+  "ancho": 480,
+  "alto": 600,
+  "items": [
+    { "nn": "01", "alt": "Winter Resonance IV flyer, black and white photo under a bridge. Saturday December 26, 10PM to 10AM, 12 hours, secret location, NYC" },
+    { "nn": "02", "alt": "Black and white photo of a crowd under an open sky. Text: 64 nights. Since 2021. New York." },
+    { "nn": "03", "alt": "Black and white photo, two silhouettes on a lift against the sky. Text: Twelve hours. Sat 12.26.26, 22:00 to 10:00." },
+    { "nn": "04", "alt": "Black and white photo of a bridge over the water. Text: The list hears first. Before tickets, there's a list. Inner Circle gets in first, shift-nyc.com/next." }
+  ]
+}

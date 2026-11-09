@@ -1,1 +1,0 @@
-import"./defineProperty-CDW-cw04.js";import{n as e,r as t}from"./programa-B6-KZpho.js";import"./pagina-DBuAdVli.js";document.documentElement.classList.add(`js-active`),e(),t({abierto:!0});
